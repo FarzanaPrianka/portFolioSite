@@ -1,0 +1,50 @@
+.designPurpose {
+  display: flex;
+}
+
+.designPurpose.one {
+  height: 100px;
+  width: 50%;
+  border-right: 1px solid grey;
+}
+
+.designPurpose.two {
+  height: 100px;
+  width: 50%;
+  border-left: 1px solid grey;
+}
+
+//title
+
+.titleRecentWorks {
+  text-align: center;
+  font-family: $secondaryFont;
+}
+
+//project list
+
+.projectList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+//project details
+
+.projectDetails {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectDetailsOne,
+.projectDetailsTwo {
+  width: 50%;
+  min-height: 200px;
+}
+
+.projectDetailsThree {
+  width: 100%;
+}

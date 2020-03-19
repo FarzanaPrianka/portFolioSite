@@ -269,6 +269,16 @@ template {
   overflow: hidden;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -276,6 +286,7 @@ body {
   height: 100%;
   color: grey;
   background-color: transparent;
+  font-family: "EB Garamond", serif;
 }
 
 .wrapper {
@@ -289,8 +300,11 @@ img {
 
 header {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(#0f2027), color-stop(#203a43), to(#2c5364));
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-image: url("assets/headerImage.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .headerWrapper {
@@ -320,29 +334,141 @@ h1 {
   margin: 0;
   padding: 0;
   color: white;
+  font-size: 10vmax;
 }
 
-.designPurpose {
+.navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.designPurpose.one {
-  height: 100px;
-  width: 50%;
-  border-right: 1px solid grey;
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px auto;
+  font-size: 1.1rem;
 }
 
-.designPurpose.two {
-  height: 100px;
+.navList li {
+  padding: 30px 25px;
+  text-transform: uppercase;
+}
+
+.navList li:hover {
+  color: #69c8c9;
+}
+
+.logo {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.aboutMeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutMePartOne, .aboutMePartTwo {
+  width: 48%;
+  text-align: center;
+}
+
+.aboutMeText {
+  border: 1px solid black;
+  position: relative;
+  left: 10%;
+  z-index: 2;
+  height: 400px;
+}
+
+.aboutMePartOne, .aboutMePartTwo {
+  position: relative;
+}
+
+.divForDesignOne {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: -10;
+  top: 250px;
+  left: -30px;
+  background-color: #e4b7b2;
+}
+
+.divForDesignTwo {
+  width: 300px;
+  height: 600px;
+  background-color: #e4b7b2;
+  position: absolute;
+  z-index: -1;
+  right: -50px;
+  bottom: -50px;
+}
+
+.aboutMe li {
   width: 50%;
-  border-left: 1px solid grey;
+}
+
+.mySkillsSection h3 {
+  text-align: center;
+  font-size: 3vmax;
+  text-transform: uppercase;
+}
+
+.mySkills {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mySkills li {
+  text-align: center;
+  width: 30%;
+  padding: 30px 10px;
+}
+
+.mySkills li:hover {
+  -webkit-box-shadow: 0px 10px 50px #e4b7b2;
+          box-shadow: 0px 10px 50px #e4b7b2;
+}
+
+.mySkills li i {
+  color: #69c8c9;
+  font-size: 4vmax;
+}
+
+#myRecentWorks {
+  margin-bottom: 40px;
 }
 
 .titleRecentWorks {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "EB Garamond", serif;
+  font-size: 3vmax;
 }
 
 .projectList {
@@ -357,6 +483,10 @@ h1 {
   padding: 50px 0;
 }
 
+.projectList li {
+  font-size: 1.9vmax;
+}
+
 .projectDetails {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,9 +498,140 @@ h1 {
 .projectDetailsOne,
 .projectDetailsTwo {
   width: 50%;
-  min-height: 200px;
+}
+
+.projectDetailsOne {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.projectDetailsTwo {
+  padding-left: 20px;
 }
 
 .projectDetailsThree {
   width: 100%;
+}
+
+.liveButtonContainer {
+  width: 50%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.liveButtonContainer button, .gitButtonContainer button {
+  background-color: #69c8c9;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.liveButtonContainer button a, .gitButtonContainer button a {
+  text-decoration: none;
+  color: white;
+}
+
+.gitButtonContainer {
+  padding-left: 20px;
+  width: 50%;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projectImageContainer {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.activeStatus {
+  color: #69c8c9;
+  font-size: 40px;
+}
+
+.contact {
+  min-height: 80vh;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactText {
+  width: 40%;
+}
+
+.formContainer {
+  width: 60%;
+}
+
+form {
+  background: -webkit-gradient(linear, left top, right top, from(#0cebeb), to(#29ffc6));
+  background: linear-gradient(to right, #0cebeb, #29ffc6);
+  min-height: 400px;
+  padding: 40px;
+}
+
+input[type="email"], input[type="text"], textarea {
+  display: inline-block;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+input:-ms-input-placeholder {
+  color: white;
+}
+
+input::-ms-input-placeholder {
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.submitForm {
+  display: block;
+  background-color: #efc7c2;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footerNote {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #69c8c9;
+  margin: 0;
+  color: black;
+  padding: 20px 0;
 }

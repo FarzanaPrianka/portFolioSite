@@ -1,67 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farzana Prianka</title>
 
-    <!-- link google fonts -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farzana Prianka</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans|Roboto:400,700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- link google fonts -->
 
-    <!-- linking the stylesheet -->
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="wrapper headerWrapper">
-        <!-- <h2 class="helloText">Hello World</h2> -->
-        <h2 id="helloWorld"></h2>
-        <h1 id="welcomeText"></h1>
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Nunito:400,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <script src="https://kit.fontawesome.com/35ca208e9c.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+
+  <!-- linking the stylesheet -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="wrapper headerWrapper">
+      <!-- <h2 class="helloText">Hello World</h2> -->
+      <h2 id="helloWorld"></h2>
+      <h1 id="welcomeText"></h1>
+    </div>
+  </header>
+
+  <!-- About Me -->
+
+  <!-- navigation Bar -->
+  <nav>
+    <div class="wrapper navBar">
+      <ul class="navList">
+        <li>Home</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Portfolio</li>
+        <li>Get in touch</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- About Me -->
+    <section class="aboutMeSection">
+      <div class="wrapper">
+        <!-- logo -->
+        <div class="logo">
+          <img src="styles/assets/logo.png" alt="logo" />
+        </div>
+        <div class="aboutMeContainer">
+          <div class="aboutMePartOne">
+            <div class="divForDesignOne"></div>
+            <img src="styles/assets/aboutMeOne.jpg" />
+            <div class="aboutMeText">
+              <h2>About Me</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam saepe laborum nostrum ratione quam
+                optio dolores illum provident quisquam. Optio doloribus ipsa voluptate animi! Adipisci eius cum
+                provident molestias et.</p>
+            </div>
+          </div>
+          <div class="aboutMePartTwo">
+            <img src="styles/assets/aboutMeImageOne.jpg" alt="" />
+            <div class="divForDesignTwo"></div>
+
+          </div>
+
+          <div class="aboutMe">
+            <!-- <div class="aboutMe image">
+              <img src="styles/assets/aboutMeImageOne.jpg" alt="" />
+            </div>
+            <div>
+              <h3>About Me</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
+                voluptatem iure rerum sunt eaque sapiente voluptatibus?
+                Provident repellendus officia et impedit atque obcaecati
+                sapiente at porro molestias? Temporibus, laboriosam natus?
+              </p>
+            </div> -->
+          </div>
+        </div>
+    </section>
+
+    <!-- My skills -->
+
+    <section class="mySkillsSection">
+      <div class="wrapper">
+        <h3>My Skills</h3>
+        <ul class="mySkills">
+          <li>
+            <i class="fab fa-html5"></i>
+            <p>HTML5</p>
+          </li>
+          <li>
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS3</p>
+          </li>
+          <li>
+            <i class="fab fa-sass"></i>
+            <p>SASS</p>
+          </li>
+          <li>
+            <i class="fas fa-mobile-alt"></i>
+            <p>Responsive Design</p>
+          </li>
+          <li>
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <i class="devicon-jquery-plain"></i>
+            <p>jQuery</p>
+          </li>
+          <li>
+            <i class="fab fa-react"></i>
+            <p>React</p>
+          </li>
+
+          <li>
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+          </li>
+
+          <li>
+            <i class="devicon-visualstudio-plain"></i>
+            <p>VS Code</p>
+          </li>
+        </ul>
       </div>
-    </header>
+    </section>
 
     <!-- My Recent Works -->
     <section id="myRecentWorks">
       <div class="wrapper">
-        <!-- div for design -->
-        <div class="designPurpose">
-          <div class="designPurpose one"></div>
-          <div class="designPurpose two"></div>
-        </div>
         <!-- title -->
         <h3 class="titleRecentWorks">My Recent Works</h3>
         <ul class="projectList">
-          <li class="itemOne">Item 1</li>
+          <li class="itemOne activeStatus">Item 1</li>
           <li class="itemTwo">Item 2</li>
           <li class="itemThree">Item 3</li>
         </ul>
+        <!-- container for project Image -->
+        <div class="projectImageContainer">
+          <img src="styles/assets/projectImageOne.png">
+        </div>
         <!-- project details -->
         <div class="projectDetails">
-          <div class="projectDetailsOne"></div>
-          <div class="projectDetailsTwo"></div>
-          <div class="projectDetailsThree"></div>
+          <div class="projectDetailsOne">
+            <p>Hi I am project 1 details</p>
+          </div>
+          <div class="projectDetailsTwo">
+            <p>Technology for project 1</p>
+          </div>
+          <div class="projectDetailsThree">
+            <div class="buttonContainer">
+              <div class="liveButtonContainer"><button><a href="#">Live</a></button></div>
+              <div class="gitButtonContainer"><button><a href="#">github</a></button></div>
+            </div>
+          </div>
         </div>
 
-        <!-- container for project Image -->
-        <div class="projectImageContainer"></div>
+
       </div>
     </section>
 
-    <!-- jquery cdn -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.0.min.js"
-      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-      crossorigin="anonymous"
-    ></script>
+    <!-- Get in Touch -->
 
-    <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <section class="contact">
+      <div class="wrapper contactContainer">
 
-    <!-- connect JS file -->
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+
+        <div class="contactText">
+          <h3>Let's Get in Touch</h3>
+          <p>farzana.prianka@gmail.com</p>
+        </div>
+        <div class="formContainer">
+          <form action="https://formspree.io/mknzzjyy" method="POST">
+            <div>
+
+              <input id="name" type="text" name="name" placeholder="Enter Your Name">
+            </div>
+
+            <div>
+
+              <input id="email" type="email" name="_replyto" placeholder="Enter Your Mail">
+            </div>
+
+
+            <textarea name="message" placeholder="Here Goes Your Message" rows="10"></textarea>
+            <input type="submit" value="Send" class="submitForm">
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+    <footer>
+
+      <div>
+        <p class="footerNote">Developed by Farzana Prianka</p>
+      </div>
+
+
+    </footer>
+  </main>
+
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+  <!-- connect JS file -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>

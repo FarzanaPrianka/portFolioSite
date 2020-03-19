@@ -1,6 +1,10 @@
 header {
   height: 100vh;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-image: url("assets/headerImage.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .headerWrapper {
@@ -23,4 +27,5 @@ h1 {
   margin: 0;
   padding: 0;
   color: white;
+  font-size: 10vmax;
 }

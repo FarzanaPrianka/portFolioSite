@@ -1,0 +1,25 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+  font-size: 1.1rem;
+  
+}
+
+.navList li {
+  padding: 30px 25px;
+  text-transform: uppercase;
+}
+
+.navList li:hover {
+  color: $primaryColor;
+
+}

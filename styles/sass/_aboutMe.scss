@@ -1,0 +1,76 @@
+// .aboutMeSection h2 {
+//   text-align: center;
+//   font-family: $secondaryFont;
+//   font-size: 5vmax;
+//   margin: 0;
+//   padding: 25px 0;
+//   font-family: $secondaryFont;
+//   color: $primaryColor;
+//   padding: 50px 0 60px;
+// }
+
+.logo {
+  width:33%;
+  margin: 0 auto;
+}
+
+.aboutMeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutMePartOne, .aboutMePartTwo {
+  width:48%;
+  text-align: center;
+}
+
+.aboutMeText {
+  border: 1px solid black;
+  position: relative;
+  left:10%;
+  z-index: 2;
+  height: 400px;
+  
+  
+}
+
+.aboutMePartOne, .aboutMePartTwo {
+  position: relative;
+
+}
+
+.divForDesignOne {
+  width:300px;
+  height: 300px;
+  position: absolute;
+  z-index: -10;
+  
+  top: 250px;
+  left: -30px;
+  background-color: $secondaryColor;
+
+
+}
+
+.divForDesignTwo {
+  width:300px;
+  height: 600px;
+  background-color: $secondaryColor;
+  position: absolute;
+  z-index: -1;
+  right: -50px;
+  bottom: -50px;
+}
+
+
+
+// .aboutMe {
+//   display: flex;
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+
+.aboutMe li {
+  width: 50%;
+}

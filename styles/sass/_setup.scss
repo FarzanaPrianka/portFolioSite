@@ -221,3 +221,7 @@ template {
   clip: rect(00 0 0);
   overflow: hidden;
 }
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+

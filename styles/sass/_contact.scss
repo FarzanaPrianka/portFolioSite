@@ -1,0 +1,60 @@
+.contact {
+    min-height: 80vh;
+    
+}
+
+.contactContainer {
+    display: flex;
+}
+
+.contactText {
+    width:40%;
+   
+}
+
+.formContainer {
+    width:60%;
+    
+}
+
+form {
+    //background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6);
+    background: linear-gradient(to right, #0cebeb,  #29ffc6);
+    min-height: 400px;
+    padding: 40px;
+}
+
+input[type="email"],input[type="text"], textarea {
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	margin-bottom: 10px;
+    
+    color: white;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color:white;
+}
+
+.submitForm {
+    
+  display:block;
+  background-color: #efc7c2;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border: none;
+  padding:15px 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  font-weight: 700;
+
+}

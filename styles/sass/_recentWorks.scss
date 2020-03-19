@@ -1,24 +1,15 @@
-.designPurpose {
-  display: flex;
+#myRecentWorks {
+  margin-bottom: 40px;
 }
 
-.designPurpose.one {
-  height: 100px;
-  width: 50%;
-  border-right: 1px solid grey;
-}
 
-.designPurpose.two {
-  height: 100px;
-  width: 50%;
-  border-left: 1px solid grey;
-}
 
 //title
 
 .titleRecentWorks {
   text-align: center;
-  font-family: $secondaryFont;
+  font-family: $primaryFont;
+  font-size: 3vmax;
 }
 
 //project list
@@ -32,6 +23,10 @@
   padding: 50px 0;
 }
 
+.projectList li {
+  font-size: 1.9vmax;
+}
+
 //project details
 
 .projectDetails {
@@ -42,9 +37,64 @@
 .projectDetailsOne,
 .projectDetailsTwo {
   width: 50%;
-  min-height: 200px;
+  
+}
+
+.projectDetailsOne {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.projectDetailsTwo {
+  padding-left: 20px;
 }
 
 .projectDetailsThree {
   width: 100%;
+}
+
+.liveButtonContainer{
+  width:50%;
+  text-align: right;
+  padding-right: 20px;
+
+}
+
+.liveButtonContainer button, .gitButtonContainer button {
+  background-color: $primaryColor;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+.liveButtonContainer button a, .gitButtonContainer button a{
+  text-decoration: none;
+  color: white;
+  
+
+}
+
+.gitButtonContainer {
+  padding-left: 20px;
+  width:50%;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.projectImageContainer {
+  
+  width: 60%;
+  margin: 0 auto;
+}
+
+.activeStatus {
+  color:$primaryColor;
+  font-size: 40px;
 }

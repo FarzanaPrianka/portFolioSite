@@ -39,52 +39,68 @@ Toronto`;
 //----------------------------My Recent Works---------------------------------
 
 function portfilio() {
-  $(".itemOne").on("click", function() {
+  $(".itemOne").on("click", function () {
     let projectOneLinkLive = "https://www.facebook.com/";
     let projectOneLinkGit = "https://www.facebook.com/";
     let projectOneImage = "styles/assets/projectImageOne.png";
     $(".projectDetailsOne").html(`<p>Hi I am project 1 details</p>`);
     $(".projectDetailsTwo").html(`<p>Technology for project 1</p>`);
     $(".projectDetailsThree").html(
-      `<p>
-      <button><a href="${projectOneLinkLive}">Live1</a></button>
-      <button><a href="${projectOneLinkGit}">github1</a></button>
-      </p>`
+      `<div class="buttonContainer">
+          <div class="liveButtonContainer"><button><a href="${projectOneLinkLive}">Live</a></button></div>
+          <div class="gitButtonContainer"><button><a href="${projectOneLinkGit}">github</a></button></div>
+      </div>`
     );
 
     $(".projectImageContainer").html(`<img src=${projectOneImage}>`);
+
+    $(this).addClass("activeStatus");
+    $(".itemTwo").removeClass("activeStatus");
+    $(".itemThree").removeClass("activeStatus");
+
+
   });
 
-  $(".itemTwo").on("click", function() {
+  $(".itemTwo").on("click", function () {
     let projectTwoLinkLive = "https://www.facebook.com/";
     let projectTwoLinkGit = "https://www.facebook.com/";
     let projectTwoImage = "styles/assets/projectImageOne.png";
     $(".projectDetailsOne").html(`<p>Hi I am project 2 details</p>`);
     $(".projectDetailsTwo").html(`<p>Technology for project 2</p>`);
     $(".projectDetailsThree").html(
-      `<p>
-      <button><a href="${projectTwoLinkLive}">Live2</a></button>
-      <button><a href="${projectTwoLinkGit}">github2</a></button>
-      </p>`
+      `<div class="buttonContainer">
+          <div class="liveButtonContainer"><button><a href="${projectTwoLinkLive}">Live</a></button></div>
+          <div class="gitButtonContainer"><button><a href="${projectTwoLinkGit}">github</a></button></div>
+      </div>`
     );
 
     $(".projectImageContainer").html(`<img src=${projectTwoImage}>`);
+
+    $(this).addClass("activeStatus");
+    $(".itemOne").removeClass("activeStatus");
+    $(".itemThree").removeClass("activeStatus");
+
+
   });
 
-  $(".itemThree").on("click", function() {
+  $(".itemThree").on("click", function () {
     let projectThreeLinkLive = "https://www.facebook.com/";
     let projectThreeLinkGit = "https://www.facebook.com/";
     let projectThreeImage = "styles/assets/projectImageOne.png";
     $(".projectDetailsOne").html(`<p>Hi I am project 3 details</p>`);
     $(".projectDetailsTwo").html(`<p>Technology for project 3</p>`);
     $(".projectDetailsThree").html(
-      `<p>
-      <button><a href="${projectThreeLinkLive}">Live3</a></button>
-      <button><a href="${projectThreeLinkGit}">github3</a></button>
-      </p>`
+      `<div class="buttonContainer">
+          <div class="liveButtonContainer"><button><a href="${projectThreeLinkLive}">Live</a></button></div>
+          <div class="gitButtonContainer"><button><a href="${projectThreeLinkGit}">github</a></button></div>
+      </div>`
     );
     $(".projectImageContainer").html(`<img src=${projectThreeImage}>`);
-    console.log("clicked item 3");
+
+    $(this).addClass("activeStatus");
+    $(".itemOne").removeClass("activeStatus");
+    $(".itemTwo").removeClass("activeStatus");
+
   });
 }
 
@@ -94,13 +110,13 @@ const app = {};
 
 //start the app
 
-app.init = function() {
+app.init = function () {
   //load header page
   helloWorld();
   //My recent works
   portfilio();
 };
 
-$(function() {
+$(function () {
   app.init();
 });

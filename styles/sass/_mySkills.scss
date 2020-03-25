@@ -1,5 +1,12 @@
 .mySkillsSection .wrapper {
-  background-color: $primaryColor;
+  background: #02aab0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #02aab0,
+    #00cdac
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #02aab0, #00cdac);
+
   position: relative;
   //height: 90vh;
   bottom: -50px;

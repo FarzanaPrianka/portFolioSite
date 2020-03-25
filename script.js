@@ -36,6 +36,34 @@ Toronto`;
   typewritter();
 }
 
+//-------------------------------navigation-----------------------------------
+
+function navigation() {
+  $(".fa-bars").on("click", function() {
+    if ($(window).width() <= 768) {
+      $(".navList").css("display", "block");
+      $(".cancel").css("display", "initial");
+      $(this).css("display", "none");
+    }
+  });
+
+  $(".cancel").on("click", function() {
+    if ($(window).width() <= 768) {
+      $(this).css("display", "none");
+      $(".fa-bars").css("display", "initial");
+      $(".navList").css("display", "none");
+    }
+  });
+
+  $(".navList li").on("click", function() {
+    if ($(window).width() <= 768) {
+      $(".navList").css("display", "none");
+      $(".fa-bars").css("display", "initial");
+      $(".cancel").css("display", "none");
+    }
+  });
+}
+
 //----------------------------My Recent Works---------------------------------
 
 function portfilio() {
@@ -112,6 +140,10 @@ const app = {};
 app.init = function() {
   //load header page
   helloWorld();
+
+  //navigation
+  navigation();
+
   //My recent works
   portfilio();
 };

@@ -394,13 +394,33 @@ header p {
   }
 }
 
+.navListContainer {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.fa-bars,
+.fa-times-circle {
+  text-align: center;
+  display: none;
+  color: white;
+}
+
+#hamburgerMenu {
+  text-align: center;
 }
 
 .navList {
@@ -415,15 +435,77 @@ header p {
           justify-content: center;
   margin: 15px auto;
   font-size: 1.1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-weight: bold;
 }
 
 .navList li {
   padding: 30px 25px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .navList li:hover {
-  color: #69c8c9;
+  color: #02aab0;
+}
+
+.navList li a {
+  text-decoration: none;
+}
+
+.navList li a:visited {
+  color: #4b4d5d;
+}
+
+.navList li a:hover {
+  color: #02aab0;
+}
+
+.cancel {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navListContainer {
+    position: relative;
+  }
+  .navList {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    width: 100%;
+    margin: 0;
+    background: #02aab0;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#02aab0), to(#00cdac));
+    background: linear-gradient(to right, #02aab0, #00cdac);
+  }
+  #hamburgerMenu {
+    padding: 30px 0;
+    background: #02aab0;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#02aab0), to(#00cdac));
+    background: linear-gradient(to right, #02aab0, #00cdac);
+  }
+  .fa-bars {
+    font-size: 5vmax;
+    display: initial;
+  }
+  .fa-times-circle {
+    font-size: 5vmax;
+  }
+  .navList li a {
+    color: white;
+  }
+  .navList li a:visited {
+    color: white;
+  }
 }
 
 .logo {
@@ -517,7 +599,11 @@ header p {
 }
 
 .mySkillsSection .wrapper {
-  background-color: #69c8c9;
+  background: #02aab0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#02aab0), to(#00cdac));
+  background: linear-gradient(to right, #02aab0, #00cdac);
   position: relative;
   bottom: -50px;
   color: white;
@@ -573,21 +659,22 @@ header p {
 }
 
 .projectList {
+  width: 80%;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 50px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5vh 0 12vh;
 }
 
 .projectList li {
+  width: 33.33%;
   font-size: 1.9vmax;
   padding: 0;
-  width: 33%;
   text-align: center;
 }
 
@@ -622,19 +709,23 @@ header p {
 
 .liveButtonContainer button,
 .gitButtonContainer button {
-  background-color: #69c8c9;
+  width: 20vmax;
+  background-color: #02aab0;
   border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-transform: uppercase;
 }
 
 .liveButtonContainer button a,
 .gitButtonContainer button a {
   text-decoration: none;
-  color: #4b4d5d;
+  color: white;
 }
 
 .gitButtonContainer {
@@ -657,8 +748,20 @@ header p {
 }
 
 .activeStatus {
-  color: #69c8c9;
+  color: #02aab0;
   font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .projectDetails p,
+  .projectList li {
+    font-size: 3vmax;
+  }
+  .liveButtonContainer button,
+  .gitButtonContainer button {
+    font-size: 2.7vmax;
+    padding: 15px 20px;
+  }
 }
 
 .contact {
@@ -695,7 +798,7 @@ header p {
 .fa-phone,
 .fa-map-marker-alt {
   margin-right: 17px;
-  color: #69c8c9;
+  color: #02aab0;
 }
 
 .backgroundText {
@@ -847,9 +950,9 @@ textarea::placeholder {
 
 .footerNote {
   text-align: center;
-  font-size: 1.2rem;
-  background-color: #69c8c9;
+  font-size: 3rem;
+  background-color: #02aab0;
   margin: 0;
-  color: #4b4d5d;
+  color: white;
   padding: 20px 0;
 }

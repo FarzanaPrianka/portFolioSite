@@ -33,7 +33,7 @@
 
   <body>
     <header>
-      <div class="wrapper headerWrapper">
+      <div id="header" class="wrapper headerWrapper">
         <div class="helloWorldContainer">
           <h2 id="helloWorld"></h2>
         </div>
@@ -52,17 +52,23 @@
       <!-- navigation Bar -->
       <nav>
         <div class="wrapper navBar">
-          <ul class="navList">
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-          </ul>
+          <div id="hamburgerMenu">
+            <i class="fas fa-bars"></i>
+            <i class="far fa-times-circle cancel"></i>
+          </div>
+          <div class="navListContainer">
+            <ul class="navList">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#aboutMe">About</a></li>
+              <li><a href="#mySkills">Skills</a></li>
+              <li><a href="#myRecentWorks">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
       <!-- About Me -->
-      <section class="aboutMeSection">
+      <section id="aboutMe" class="aboutMeSection">
         <div class="logo wrapper" data-aos="zoom-in-up">
           <img src="styles/assets/logo.png" alt="logo" />
         </div>
@@ -90,7 +96,7 @@
 
       <!-- My skills -->
 
-      <section class="mySkillsSection">
+      <section id="mySkills" class="mySkillsSection">
         <div class="wrapper">
           <h3>My Skills</h3>
           <ul class="mySkills">
@@ -149,7 +155,7 @@
             <li class="itemThree" data-aos="fade-down">Haikue</li>
           </ul>
           <!-- container for project Image -->
-          <div class="projectImageContainer">
+          <div class="projectImageContainer" data-aos="zoom-out-down">
             <img src="styles/assets/projectImageOne.png" />
           </div>
           <!-- project details -->
@@ -176,7 +182,7 @@
 
       <!-- Get in Touch -->
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="wrapper contactContainer">
           <div class="contactText">
             <h3>Let's Get in Touch</h3>
@@ -229,7 +235,9 @@
       </section>
       <footer>
         <div>
-          <p class="footerNote">Developed by Farzana Prianka</p>
+          <p class="footerNote">
+            Developed and Designed by Farzana Prianka(Site Under Construction)
+          </p>
         </div>
       </footer>
     </main>

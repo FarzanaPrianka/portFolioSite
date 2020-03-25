@@ -10,15 +10,10 @@ header {
 .headerWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 95%;
-}
-
-h1 {
-  color: white;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  justify-content: space-around;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #helloWorld {
@@ -28,4 +23,47 @@ h1 {
   padding: 0;
   color: white;
   font-size: 10vmax;
+}
+
+.helloWorldContainer {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.welcomeTextContainer {
+  height: 30%;
+}
+
+#welcomeText {
+  color: white;
+  margin: 0;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+header p {
+  text-align: center;
+  font-size: 3.2vmax;
+}
+
+.fas {
+  color: #0cebeb;
+}
+
+.fas:hover {
+  color: #29ffc6;
+
+  transition: all 0.7s;
+}
+
+@media (max-width: 980px) {
+  header {
+    background-attachment: scroll;
+  }
+  #welcomeText {
+    font-size: 3vmax;
+  }
 }

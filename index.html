@@ -1,224 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farzana Prianka</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farzana Prianka</title>
+    <!-- link google fonts -->
 
-  <!-- link google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Nunito:400,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Nunito:400,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
 
-  <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/35ca208e9c.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/35ca208e9c.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
 
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+    <!-- linking the stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
 
-  <!-- linking the stylesheet -->
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
-</head>
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-<body>
-  <header>
-    <div class="wrapper headerWrapper">
-      <!-- <h2 class="helloText">Hello World</h2> -->
-      <h2 id="helloWorld"></h2>
-      <h1 id="welcomeText"></h1>
-    </div>
-  </header>
+  <body>
+    <header>
+      <div class="wrapper headerWrapper">
+        <div class="helloWorldContainer">
+          <h2 id="helloWorld"></h2>
+        </div>
+        <div class="welcomeTextContainer">
+          <h1 id="welcomeText"></h1>
+        </div>
+        <p>
+          <a href="#mainContent"><i class="fas fa-arrow-circle-down"></i></a>
+        </p>
+      </div>
+    </header>
 
-  <!-- About Me -->
-
-  <!-- navigation Bar -->
-  <nav>
-    <div class="wrapper navBar">
-      <ul class="navList">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Portfolio</li>
-        <li>Get in touch</li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
     <!-- About Me -->
-    <section class="aboutMeSection">
-      <div class="wrapper">
-        <!-- logo -->
-        <div class="logo">
+
+    <main id="mainContent">
+      <!-- navigation Bar -->
+      <nav>
+        <div class="wrapper navBar">
+          <ul class="navList">
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- About Me -->
+      <section class="aboutMeSection">
+        <div class="logo wrapper" data-aos="zoom-in-up">
           <img src="styles/assets/logo.png" alt="logo" />
         </div>
-        <div class="aboutMeContainer">
-          <div class="aboutMePartOne">
-            <div class="divForDesignOne"></div>
-            <img src="styles/assets/aboutMeOne.jpg" />
-            <div class="aboutMeText">
-              <h2>About Me</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam saepe laborum nostrum ratione quam
-                optio dolores illum provident quisquam. Optio doloribus ipsa voluptate animi! Adipisci eius cum
-                provident molestias et.</p>
-            </div>
-          </div>
-          <div class="aboutMePartTwo">
-            <img src="styles/assets/aboutMeImageOne.jpg" alt="" />
-            <div class="divForDesignTwo"></div>
-
-          </div>
-
-          <div class="aboutMe">
-            <!-- <div class="aboutMe image">
+        <div class="aboutMeContainer wrapper">
+          <div class="aboutMeContainerRight">
+            <div class="aboutMeImageContainer" data-aos="flip-right">
               <img src="styles/assets/aboutMeImageOne.jpg" alt="" />
             </div>
-            <div>
+            <div class="aboutMeTextContainer">
               <h3>About Me</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
-                voluptatem iure rerum sunt eaque sapiente voluptatibus?
-                Provident repellendus officia et impedit atque obcaecati
-                sapiente at porro molestias? Temporibus, laboriosam natus?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis perspiciatis quasi harum repellendus culpa cupiditate
+                sit quibusdam magnam quos, expedita voluptatem assumenda?
+                Doloremque maxime laborum dolorem eveniet quidem minima
+                totam?Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Animi consequuntur, facere eius, illo placeat officia ea cum
+                similique corrupti, inventore quam. Sapiente odit dicta
+                repudiandae iusto omnis velit modi iste!
               </p>
-            </div> -->
-          </div>
-        </div>
-    </section>
-
-    <!-- My skills -->
-
-    <section class="mySkillsSection">
-      <div class="wrapper">
-        <h3>My Skills</h3>
-        <ul class="mySkills">
-          <li>
-            <i class="fab fa-html5"></i>
-            <p>HTML5</p>
-          </li>
-          <li>
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS3</p>
-          </li>
-          <li>
-            <i class="fab fa-sass"></i>
-            <p>SASS</p>
-          </li>
-          <li>
-            <i class="fas fa-mobile-alt"></i>
-            <p>Responsive Design</p>
-          </li>
-          <li>
-            <i class="fab fa-js"></i>
-            <p>JavaScript</p>
-          </li>
-          <li>
-            <i class="devicon-jquery-plain"></i>
-            <p>jQuery</p>
-          </li>
-          <li>
-            <i class="fab fa-react"></i>
-            <p>React</p>
-          </li>
-
-          <li>
-            <i class="fab fa-github"></i>
-            <p>GitHub</p>
-          </li>
-
-          <li>
-            <i class="devicon-visualstudio-plain"></i>
-            <p>VS Code</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- My Recent Works -->
-    <section id="myRecentWorks">
-      <div class="wrapper">
-        <!-- title -->
-        <h3 class="titleRecentWorks">My Recent Works</h3>
-        <ul class="projectList">
-          <li class="itemOne activeStatus">Item 1</li>
-          <li class="itemTwo">Item 2</li>
-          <li class="itemThree">Item 3</li>
-        </ul>
-        <!-- container for project Image -->
-        <div class="projectImageContainer">
-          <img src="styles/assets/projectImageOne.png">
-        </div>
-        <!-- project details -->
-        <div class="projectDetails">
-          <div class="projectDetailsOne">
-            <p>Hi I am project 1 details</p>
-          </div>
-          <div class="projectDetailsTwo">
-            <p>Technology for project 1</p>
-          </div>
-          <div class="projectDetailsThree">
-            <div class="buttonContainer">
-              <div class="liveButtonContainer"><button><a href="#">Live</a></button></div>
-              <div class="gitButtonContainer"><button><a href="#">github</a></button></div>
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- My skills -->
 
-      </div>
-    </section>
+      <section class="mySkillsSection">
+        <div class="wrapper">
+          <h3>My Skills</h3>
+          <ul class="mySkills">
+            <li data-aos="zoom-in">
+              <i class="fab fa-html5"></i>
+              <p>HTML5</p>
+            </li>
+            <li data-aos="zoom-in">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS3</p>
+            </li>
+            <li data-aos="zoom-in">
+              <i class="fab fa-sass"></i>
+              <p>SASS</p>
+            </li>
+            <li data-aos="zoom-in">
+              <i class="fas fa-mobile-alt"></i>
+              <p>Responsive Design</p>
+            </li>
+            <li data-aos="zoom-in">
+              <i class="fab fa-js"></i>
+              <p>JavaScript</p>
+            </li>
+            <li data-aos="zoom-in">
+              <i class="devicon-jquery-plain"></i>
+              <p>jQuery</p>
+            </li>
+            <li data-aos="zoom-in">
+              <i class="fab fa-react"></i>
+              <p>React</p>
+            </li>
 
-    <!-- Get in Touch -->
+            <li data-aos="zoom-in">
+              <i class="fab fa-github"></i>
+              <p>GitHub</p>
+            </li>
 
-    <section class="contact">
-      <div class="wrapper contactContainer">
-
-
-        <div class="contactText">
-          <h3>Let's Get in Touch</h3>
-          <p>farzana.prianka@gmail.com</p>
+            <li data-aos="zoom-in">
+              <i class="devicon-visualstudio-plain"></i>
+              <p>VS Code</p>
+            </li>
+          </ul>
         </div>
-        <div class="formContainer">
-          <form action="https://formspree.io/mknzzjyy" method="POST">
-            <div>
+      </section>
 
-              <input id="name" type="text" name="name" placeholder="Enter Your Name">
+      <!-- My Recent Works -->
+      <section id="myRecentWorks">
+        <div class="wrapper">
+          <!-- title -->
+          <h3 class="titleRecentWorks">My Recent Works</h3>
+          <ul class="projectList">
+            <li class="itemOne activeStatus" data-aos="fade-down">
+              Through The Lens
+            </li>
+            <li class="itemTwo" data-aos="fade-down">Spelling Wizard</li>
+            <li class="itemThree" data-aos="fade-down">Haikue</li>
+          </ul>
+          <!-- container for project Image -->
+          <div class="projectImageContainer">
+            <img src="styles/assets/projectImageOne.png" />
+          </div>
+          <!-- project details -->
+          <div class="projectDetails">
+            <div class="projectDetailsOne">
+              <p>A portfolio site of a photography agency built in HTML, CSS</p>
             </div>
-
-            <div>
-
-              <input id="email" type="email" name="_replyto" placeholder="Enter Your Mail">
+            <div class="projectDetailsTwo">
+              <p>Technology: HTML, CSS</p>
             </div>
-
-
-            <textarea name="message" placeholder="Here Goes Your Message" rows="10"></textarea>
-            <input type="submit" value="Send" class="submitForm">
-          </form>
-
+            <div class="projectDetailsThree">
+              <div class="buttonContainer">
+                <div class="liveButtonContainer">
+                  <button><a href="#">Live</a></button>
+                </div>
+                <div class="gitButtonContainer">
+                  <button><a href="#">github</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-    <footer>
+      <!-- Get in Touch -->
 
-      <div>
-        <p class="footerNote">Developed by Farzana Prianka</p>
-      </div>
+      <section class="contact">
+        <div class="wrapper contactContainer">
+          <div class="contactText">
+            <h3>Let's Get in Touch</h3>
+            <p class="backgroundText">Contact</p>
+            <p class="contactInfo">
+              <i class="fas fa-envelope"></i>farzana.prianka@gmail.com
+            </p>
+            <p class="contactInfo">
+              <i class="fas fa-phone"></i>+1-647-886-2953
+            </p>
+            <p class="contactInfo">
+              <i class="fas fa-map-marker-alt"></i>Toronto, Ontario
+            </p>
+          </div>
+          <div class="formContainer">
+            <form
+              data-aos="fade-left"
+              action="https://formspree.io/mknzzjyy"
+              method="POST"
+            >
+              <div>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                />
+              </div>
 
+              <div>
+                <input
+                  id="email"
+                  type="email"
+                  name="_replyto"
+                  placeholder="Enter Your Mail"
+                />
+              </div>
 
-    </footer>
-  </main>
+              <textarea
+                name="message"
+                placeholder="Here Goes Your Message"
+                rows="10"
+              ></textarea>
+              <div class="submiteButtonContainer">
+                <input type="submit" value="Send" class="submitForm" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <p class="footerNote">Developed by Farzana Prianka</p>
+        </div>
+      </footer>
+    </main>
 
-  <!-- jquery cdn -->
-  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
-    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
 
-  <script type="text/javascript" src="particles.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
-  <!-- connect JS file -->
-  <script type="text/javascript" src="script.js"></script>
-</body>
-
+    <!-- connect JS file -->
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200 });
+    </script>
+  </body>
 </html>

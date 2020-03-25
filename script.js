@@ -21,7 +21,7 @@ function headerLineTwo() {
   let i = 0;
   let text = `I'm Farzana Prianka. A front-end web developer based in
 Toronto`;
-  let speed = 50;
+  let speed = 70;
 
   function typewritter() {
     if (i < text.length) {
@@ -39,12 +39,14 @@ Toronto`;
 //----------------------------My Recent Works---------------------------------
 
 function portfilio() {
-  $(".itemOne").on("click", function () {
+  $(".itemOne").on("click", function() {
     let projectOneLinkLive = "https://www.facebook.com/";
     let projectOneLinkGit = "https://www.facebook.com/";
     let projectOneImage = "styles/assets/projectImageOne.png";
-    $(".projectDetailsOne").html(`<p>Hi I am project 1 details</p>`);
-    $(".projectDetailsTwo").html(`<p>Technology for project 1</p>`);
+    $(".projectDetailsOne").html(
+      `<p>A portfolio site of a photography agency built in HTML, CSS</p>`
+    );
+    $(".projectDetailsTwo").html(`<p>Technology:HTML, CSS</p>`);
     $(".projectDetailsThree").html(
       `<div class="buttonContainer">
           <div class="liveButtonContainer"><button><a href="${projectOneLinkLive}">Live</a></button></div>
@@ -57,16 +59,16 @@ function portfilio() {
     $(this).addClass("activeStatus");
     $(".itemTwo").removeClass("activeStatus");
     $(".itemThree").removeClass("activeStatus");
-
-
   });
 
-  $(".itemTwo").on("click", function () {
+  $(".itemTwo").on("click", function() {
     let projectTwoLinkLive = "https://www.facebook.com/";
     let projectTwoLinkGit = "https://www.facebook.com/";
     let projectTwoImage = "styles/assets/projectImageOne.png";
-    $(".projectDetailsOne").html(`<p>Hi I am project 2 details</p>`);
-    $(".projectDetailsTwo").html(`<p>Technology for project 2</p>`);
+    $(".projectDetailsOne").html(
+      `<p>An interactive quiz where users can test their spelling skills</p>`
+    );
+    $(".projectDetailsTwo").html(`<p>Technology: HTML, CSS, SASS, jQuery</p>`);
     $(".projectDetailsThree").html(
       `<div class="buttonContainer">
           <div class="liveButtonContainer"><button><a href="${projectTwoLinkLive}">Live</a></button></div>
@@ -79,16 +81,14 @@ function portfilio() {
     $(this).addClass("activeStatus");
     $(".itemOne").removeClass("activeStatus");
     $(".itemThree").removeClass("activeStatus");
-
-
   });
 
-  $(".itemThree").on("click", function () {
+  $(".itemThree").on("click", function() {
     let projectThreeLinkLive = "https://www.facebook.com/";
     let projectThreeLinkGit = "https://www.facebook.com/";
     let projectThreeImage = "styles/assets/projectImageOne.png";
     $(".projectDetailsOne").html(`<p>Hi I am project 3 details</p>`);
-    $(".projectDetailsTwo").html(`<p>Technology for project 3</p>`);
+    $(".projectDetailsTwo").html(`<p>Technology:HTML, CSS, React</p>`);
     $(".projectDetailsThree").html(
       `<div class="buttonContainer">
           <div class="liveButtonContainer"><button><a href="${projectThreeLinkLive}">Live</a></button></div>
@@ -100,7 +100,6 @@ function portfilio() {
     $(this).addClass("activeStatus");
     $(".itemOne").removeClass("activeStatus");
     $(".itemTwo").removeClass("activeStatus");
-
   });
 }
 
@@ -110,13 +109,13 @@ const app = {};
 
 //start the app
 
-app.init = function () {
+app.init = function() {
   //load header page
   helloWorld();
   //My recent works
   portfilio();
 };
 
-$(function () {
+$(function() {
   app.init();
 });

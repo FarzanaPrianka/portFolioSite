@@ -1,7 +1,19 @@
+.mySkillsSection .wrapper {
+  background-color: $primaryColor;
+  position: relative;
+  //height: 90vh;
+  bottom: -50px;
+  color: white;
+
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
+}
+
 .mySkillsSection h3 {
   text-align: center;
   font-size: 3vmax;
   text-transform: uppercase;
+  margin: 0;
+  padding: 30px 0 50px;
 }
 
 .mySkills {
@@ -17,14 +29,18 @@
 .mySkills li {
   text-align: center;
   width: 30%;
-  padding: 30px 10px;
+  padding: 20px 10px;
+  font-size: 2vmax;
+
+  //box-shadow: 0px 10px 50px $secondaryColor;
+  //box-shadow: 10px 10px 0px 0px $secondaryColor;
 }
 
-.mySkills li:hover {
-  box-shadow: 0px 10px 50px $secondaryColor;
-}
+// .mySkills li:hover {
+//   box-shadow: 0px 10px 50px #f9e0ec;
+// }
 
 .mySkills li i {
-  color: $primaryColor;
-  font-size: 4vmax;
+  color: #e2fcff;
+  font-size: 5vmax;
 }

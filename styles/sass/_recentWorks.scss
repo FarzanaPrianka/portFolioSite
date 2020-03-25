@@ -1,8 +1,7 @@
 #myRecentWorks {
-  margin-bottom: 40px;
+  padding: 80px 0;
+  background-color: #f7f7f7;
 }
-
-
 
 //title
 
@@ -10,6 +9,7 @@
   text-align: center;
   font-family: $primaryFont;
   font-size: 3vmax;
+  margin-bottom: 40px;
 }
 
 //project list
@@ -17,14 +17,17 @@
 .projectList {
   list-style: none;
   margin: 0;
-  padding: 0;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 50px 0;
 }
 
 .projectList li {
   font-size: 1.9vmax;
+  padding: 0;
+  width: 33%;
+  text-align: center;
 }
 
 //project details
@@ -36,31 +39,32 @@
 
 .projectDetailsOne,
 .projectDetailsTwo {
-  width: 50%;
-  
+  width: 100%;
+  text-align: center;
+  font-size: 1.8vmax;
 }
 
-.projectDetailsOne {
-  text-align: right;
-  padding-right: 20px;
-}
+// .projectDetailsOne p,
+// .projectDetailsTwo p {
+//   margin: 0;
+// }
 
-.projectDetailsTwo {
-  padding-left: 20px;
+.projectDetailsTwo p {
+  margin-bottom: 30px;
 }
 
 .projectDetailsThree {
   width: 100%;
 }
 
-.liveButtonContainer{
-  width:50%;
+.liveButtonContainer {
+  width: 50%;
   text-align: right;
-  padding-right: 20px;
-
+  padding-right: 10px;
 }
 
-.liveButtonContainer button, .gitButtonContainer button {
+.liveButtonContainer button,
+.gitButtonContainer button {
   background-color: $primaryColor;
   border: none;
   padding: 15px 32px;
@@ -68,19 +72,17 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
 }
 
-.liveButtonContainer button a, .gitButtonContainer button a{
+.liveButtonContainer button a,
+.gitButtonContainer button a {
   text-decoration: none;
-  color: white;
-  
-
+  color: $thirdColor;
 }
 
 .gitButtonContainer {
-  padding-left: 20px;
-  width:50%;
+  padding-left: 10px;
+  width: 50%;
 }
 
 .buttonContainer {
@@ -89,12 +91,11 @@
 }
 
 .projectImageContainer {
-  
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .activeStatus {
-  color:$primaryColor;
+  color: $primaryColor;
   font-size: 40px;
 }

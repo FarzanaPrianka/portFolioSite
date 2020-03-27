@@ -5,7 +5,7 @@
 }
 
 .aboutMeContainer {
-  height: 90vh;
+  height: 100vh;
   display: flex;
 }
 
@@ -17,7 +17,6 @@
   width: 80%;
   margin: 0 auto;
   height: 100%;
-  //background-color: rgba(239, 199, 194, 0.3);
   background-color: $fourthColor;
   display: flex;
   justify-content: center;
@@ -28,10 +27,14 @@
   width: 50%;
   position: relative;
   right: 50px;
+  height: 78%;
+  margin: auto auto;
 }
 
 .aboutMeTextContainer {
   width: 50%;
+  height: 89%;
+  margin: auto auto;
 }
 
 .aboutMeTextContainer h3 {
@@ -39,9 +42,9 @@
 }
 
 .aboutMeTextContainer p {
-  padding-right: 30px;
+  padding-right: 35px;
   font-size: 1.5rem;
-  line-height: 30px;
+  line-height: 2;
 }
 
 @media (max-width: 980px) {
@@ -58,6 +61,7 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    height: auto;
   }
 
   .aboutMeImageContainer {
@@ -73,6 +77,10 @@
 @media (max-width: 768px) {
   .aboutMeTextContainer p {
     font-size: 1.2rem;
+  }
+
+  .aboutMeTextContainer h3 {
+    font-size: 4vmax;
   }
 }
 

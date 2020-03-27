@@ -35,10 +35,22 @@
   padding: 30px 25px;
   text-transform: uppercase;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.diamond {
+  margin-top: 20px;
+  color: $seventhColor;
+  opacity: 0;
 }
 
 .navList li:hover {
   color: $primaryColor;
+}
+
+.navList li:hover .diamond {
+  opacity: 1;
 }
 
 .navList li a {
@@ -57,15 +69,15 @@
   display: none;
 }
 
+//responsive design starts------------------------------------------
+
 @media (max-width: 768px) {
   .navListContainer {
-    position: relative;
+    display: none;
   }
   .navList {
-    display: none;
     flex-direction: column;
     color: white;
-
     width: 100%;
     margin: 0;
     background: #02aab0; /* fallback for old browsers */
@@ -90,7 +102,6 @@
 
   .fa-bars {
     font-size: 5vmax;
-
     display: initial;
   }
 

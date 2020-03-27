@@ -6,12 +6,9 @@
     #00cdac
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #02aab0, #00cdac);
-
   position: relative;
-  //height: 90vh;
   bottom: -50px;
   color: white;
-
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -38,16 +35,31 @@
   width: 30%;
   padding: 20px 10px;
   font-size: 2vmax;
-
-  //box-shadow: 0px 10px 50px $secondaryColor;
-  //box-shadow: 10px 10px 0px 0px $secondaryColor;
 }
-
-// .mySkills li:hover {
-//   box-shadow: 0px 10px 50px #f9e0ec;
-// }
 
 .mySkills li i {
   color: #e2fcff;
   font-size: 5vmax;
+  transition: all 0.7s;
+  margin: 0;
+}
+
+.iconContainer {
+  transition: all 0.7s;
+}
+
+.mySkills li:hover .iconContainer {
+  transform: scale(1.5);
+}
+
+//responsive design starts------------------------
+
+@media (max-width: 768px) {
+  .mySkillsSection h3 {
+    font-size: 4vmax;
+  }
+
+  .mySkills li {
+    font-size: 3vmax;
+  }
 }

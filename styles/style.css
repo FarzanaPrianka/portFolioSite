@@ -303,12 +303,16 @@ body {
 img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .contactText h3 {
-    font-size: 4vmax;
-  }
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
 }
 
 header {
@@ -375,11 +379,11 @@ header p {
   font-size: 3.2vmax;
 }
 
-.fas {
+.fa-arrow-circle-down {
   color: #0cebeb;
 }
 
-.fas:hover {
+.fa-arrow-circle-down:hover {
   color: #29ffc6;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
@@ -444,10 +448,27 @@ header p {
   padding: 30px 25px;
   text-transform: uppercase;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.diamond {
+  margin-top: 20px;
+  color: gold;
+  opacity: 0;
 }
 
 .navList li:hover {
   color: #02aab0;
+}
+
+.navList li:hover .diamond {
+  opacity: 1;
 }
 
 .navList li a {
@@ -468,10 +489,9 @@ header p {
 
 @media (max-width: 768px) {
   .navListContainer {
-    position: relative;
+    display: none;
   }
   .navList {
-    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -515,7 +535,7 @@ header p {
 }
 
 .aboutMeContainer {
-  height: 90vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,10 +565,14 @@ header p {
   width: 50%;
   position: relative;
   right: 50px;
+  height: 78%;
+  margin: auto auto;
 }
 
 .aboutMeTextContainer {
   width: 50%;
+  height: 89%;
+  margin: auto auto;
 }
 
 .aboutMeTextContainer h3 {
@@ -556,9 +580,9 @@ header p {
 }
 
 .aboutMeTextContainer p {
-  padding-right: 30px;
+  padding-right: 35px;
   font-size: 1.5rem;
-  line-height: 30px;
+  line-height: 2;
 }
 
 @media (max-width: 980px) {
@@ -576,6 +600,7 @@ header p {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    height: auto;
   }
   .aboutMeImageContainer {
     right: 0;
@@ -589,6 +614,9 @@ header p {
 @media (max-width: 768px) {
   .aboutMeTextContainer p {
     font-size: 1.2rem;
+  }
+  .aboutMeTextContainer h3 {
+    font-size: 4vmax;
   }
 }
 
@@ -644,6 +672,28 @@ header p {
 .mySkills li i {
   color: #e2fcff;
   font-size: 5vmax;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  margin: 0;
+}
+
+.iconContainer {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.mySkills li:hover .iconContainer {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+  .mySkillsSection h3 {
+    font-size: 4vmax;
+  }
+  .mySkills li {
+    font-size: 3vmax;
+  }
 }
 
 #myRecentWorks {
@@ -653,7 +703,6 @@ header p {
 
 .titleRecentWorks {
   text-align: center;
-  font-family: "EB Garamond", serif;
   font-size: 3vmax;
   margin-bottom: 40px;
 }
@@ -672,10 +721,35 @@ header p {
 }
 
 .projectList li {
-  width: 33.33%;
+  width: 20vmax;
   font-size: 1.9vmax;
-  padding: 0;
+  padding: 20px;
   text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: "Nunito", sans-serif;
+}
+
+.projectList li:hover {
+  font-weight: bold;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: crosshair;
+  background-color: rgba(239, 199, 194, 0.3);
+}
+
+.projectsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectImageContainer {
+  width: 35%;
+  margin: auto auto;
+  height: 80%;
+  border: 10px solid #02aab0;
+  background-color: #02aab0;
 }
 
 .projectDetails {
@@ -684,6 +758,21 @@ header p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 65%;
+  margin-left: 25px;
+  padding: 0 25px;
+  background-color: #eef5ef;
+  padding-bottom: 20px;
+}
+
+.type {
+  position: relative;
+  color: black;
+}
+
+.projectDetails p {
+  text-align: left;
+  line-height: 35px;
 }
 
 .projectDetailsOne,
@@ -701,18 +790,51 @@ header p {
   width: 100%;
 }
 
+.tech {
+  display: inline-block;
+  text-align: center;
+  border: 1.5px solid #02aab0;
+  padding: 10px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.line {
+  content: "";
+  bottom: 0;
+  display: block;
+  width: 18%;
+  height: 2px;
+  background-color: #02aab0;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .liveButtonContainer {
-  width: 50%;
-  text-align: right;
+  text-align: left;
   padding-right: 10px;
 }
 
-.liveButtonContainer button,
-.gitButtonContainer button {
+.gitButtonContainer {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.liveButtonContainer a,
+.gitButtonContainer a {
+  text-decoration: none;
+  color: white;
   width: 20vmax;
   background-color: #02aab0;
   border: none;
-  padding: 15px 32px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -720,46 +842,107 @@ header p {
   font-weight: bold;
   border-radius: 10px;
   text-transform: uppercase;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
-.liveButtonContainer button a,
-.gitButtonContainer button a {
-  text-decoration: none;
-  color: white;
+.liveButtonContainer:hover .live,
+.gitButtonContainer:hover .git {
+  color: gold;
 }
 
-.gitButtonContainer {
-  padding-left: 10px;
-  width: 50%;
-}
-
-.buttonContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.projectImageContainer {
-  width: 80%;
-  margin: 0 auto;
+.liveButtonContainer a:hover,
+.gitButtonContainer a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 2px 2px 10px 1px #4b4d5d;
+          box-shadow: 2px 2px 10px 1px #4b4d5d;
+  color: gold;
 }
 
 .activeStatus {
   color: #02aab0;
   font-size: 40px;
+  font-weight: bold;
+  border-bottom: 2.9px solid #02aab0;
+  background-color: #eef5ef;
 }
 
 @media (max-width: 768px) {
-  .projectDetails p,
-  .projectList li {
-    font-size: 3vmax;
+  .titleRecentWorks {
+    font-size: 4vmax;
   }
-  .liveButtonContainer button,
-  .gitButtonContainer button {
+  .description,
+  .projectList li,
+  .tech {
+    font-size: 2.2vmax;
+  }
+  .type {
+    font-size: 2.3vmax;
+  }
+  .liveButtonContainer a,
+  .gitButtonContainer a {
     font-size: 2.7vmax;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .projectList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 0 8vh;
+  }
+  .projectList li {
+    width: 50%;
+  }
+  .description,
+  .tech,
+  .projectList li {
+    font-size: 3.5vmax;
+  }
+  .type {
+    font-size: 3.7vmax;
+  }
+  .projectsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projectImageContainer {
+    width: 80%;
+    height: auto;
+  }
+  .projectDetails {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projectDetails p {
+    text-align: center;
+  }
+  .buttonContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .line {
+    position: relative;
+    left: 40%;
+  }
+  .liveButtonContainer a,
+  .gitButtonContainer a {
+    font-size: 2.5vmax;
     padding: 15px 20px;
   }
 }
@@ -786,19 +969,21 @@ header p {
   width: 40%;
 }
 
-.contactInfo {
-  font-size: 1.8vmax;
-}
-
 .contactText h3 {
   font-size: 3vmax;
 }
 
+.contactInfo {
+  font-size: 1.8vmax;
+}
+
 .fa-envelope,
 .fa-phone,
-.fa-map-marker-alt {
+.fa-map-marker-alt,
+.fab {
   margin-right: 17px;
   color: #02aab0;
+  font-size: 1.8vmax;
 }
 
 .backgroundText {
@@ -810,10 +995,27 @@ header p {
   bottom: 0;
 }
 
+.contactInfo i:hover,
+.socialMedia i:hover {
+  color: #00cdac;
+}
+
+.socialMedia i {
+  -webkit-transform: all 0.7s;
+          transform: all 0.7s;
+}
+
+.socialMedia i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .formContainer {
   width: 50%;
   padding: 50px 0;
   background-color: #eef4f1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 form {
@@ -875,6 +1077,22 @@ textarea::placeholder {
   font-weight: 700;
   width: 100px;
   border: 1px solid #4b4d5d;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.submitForm:hover {
+  background-color: #02aab0;
+  color: gold;
+  border: none;
+}
+
+.formContainer:hover {
+  background-color: rgba(239, 199, 194, 0.2);
+}
+
+.formContainer:hover .backgroundText {
+  color: #eef4f1;
 }
 
 @media (max-width: 1180px) {
@@ -900,8 +1118,13 @@ textarea::placeholder {
   .backgroundText {
     display: none;
   }
-  .contactInfo {
+  .contactInfo,
+  .socialMedia i,
+  .contactText i {
     font-size: 3vmax;
+  }
+  .contactText i {
+    padding: 10px 0;
   }
   .contactText h3 {
     font-size: 4vmax;
@@ -915,7 +1138,6 @@ textarea::placeholder {
   textarea,
   input::-webkit-input-placeholder {
     text-align: center;
-    font-size: 1rem;
     font-size: 3vmax;
   }
   input[type="email"],
@@ -923,7 +1145,6 @@ textarea::placeholder {
   textarea,
   input:-ms-input-placeholder {
     text-align: center;
-    font-size: 1rem;
     font-size: 3vmax;
   }
   input[type="email"],
@@ -931,7 +1152,6 @@ textarea::placeholder {
   textarea,
   input::-ms-input-placeholder {
     text-align: center;
-    font-size: 1rem;
     font-size: 3vmax;
   }
   input[type="email"],
@@ -939,7 +1159,6 @@ textarea::placeholder {
   textarea,
   input::placeholder {
     text-align: center;
-    font-size: 1rem;
     font-size: 3vmax;
   }
   .submitForm {
@@ -948,9 +1167,39 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 480px) {
+  input[type="email"],
+  input[type="text"],
+  textarea,
+  input::-webkit-input-placeholder {
+    font-size: 2vmax;
+  }
+  input[type="email"],
+  input[type="text"],
+  textarea,
+  input:-ms-input-placeholder {
+    font-size: 2vmax;
+  }
+  input[type="email"],
+  input[type="text"],
+  textarea,
+  input::-ms-input-placeholder {
+    font-size: 2vmax;
+  }
+  input[type="email"],
+  input[type="text"],
+  textarea,
+  input::placeholder {
+    font-size: 2vmax;
+  }
+  .submitForm {
+    font-size: 2vmax;
+  }
+}
+
 .footerNote {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2vmax;
   background-color: #02aab0;
   margin: 0;
   color: white;

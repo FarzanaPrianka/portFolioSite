@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farzana Prianka</title>
 
+    <!-- favicon -->
+
+    <link rel="shortcut icon" type="image/png" href="styles/assets/logo.png" />
+
     <!-- link google fonts -->
 
     <link
@@ -32,6 +36,7 @@
   </head>
 
   <body>
+    <!-- header -------------------------------------------------------------->
     <header>
       <div id="header" class="wrapper headerWrapper">
         <div class="helloWorldContainer">
@@ -46,10 +51,8 @@
       </div>
     </header>
 
-    <!-- About Me -->
-
     <main id="mainContent">
-      <!-- navigation Bar -->
+      <!-- navigation Bar --------------------------------------------------->
       <nav>
         <div class="wrapper navBar">
           <div id="hamburgerMenu">
@@ -58,20 +61,38 @@
           </div>
           <div class="navListContainer">
             <ul class="navList">
-              <li><a href="#header">Home</a></li>
-              <li><a href="#aboutMe">About</a></li>
-              <li><a href="#mySkills">Skills</a></li>
-              <li><a href="#myRecentWorks">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="#header">Home</a>
+                <i class="fas fa-gem diamond"></i>
+              </li>
+              <li>
+                <a href="#aboutMe">About</a>
+                <i class="fas fa-gem diamond"></i>
+              </li>
+              <li>
+                <a href="#mySkills">Skills</a>
+                <i class="fas fa-gem diamond"></i>
+              </li>
+              <li>
+                <a href="#myRecentWorks">Portfolio</a>
+                <i class="fas fa-gem diamond"></i>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+                <i class="fas fa-gem diamond"></i>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- About Me -->
+
+      <!-- About Me ----------------------------------------------------------->
       <section id="aboutMe" class="aboutMeSection">
+        <!-- logo -->
         <div class="logo wrapper" data-aos="zoom-in-up">
           <img src="styles/assets/logo.png" alt="logo" />
         </div>
+        <!-- text and image -->
         <div class="aboutMeContainer wrapper">
           <div class="aboutMeContainerRight">
             <div class="aboutMeImageContainer" data-aos="flip-right">
@@ -94,85 +115,131 @@
         </div>
       </section>
 
-      <!-- My skills -->
+      <!-- My skills ----------------------------------------------------->
 
       <section id="mySkills" class="mySkillsSection">
         <div class="wrapper">
           <h3>My Skills</h3>
           <ul class="mySkills">
             <li data-aos="zoom-in">
-              <i class="fab fa-html5"></i>
-              <p>HTML5</p>
+              <p class="iconContainer">
+                <i class="fab fa-html5"></i>
+              </p>
+              <p class="skill">HTML5</p>
             </li>
             <li data-aos="zoom-in">
-              <i class="fab fa-css3-alt"></i>
-              <p>CSS3</p>
+              <p class="iconContainer">
+                <i class="fab fa-css3-alt"></i>
+              </p>
+              <p class="skill">CSS3</p>
             </li>
             <li data-aos="zoom-in">
-              <i class="fab fa-sass"></i>
-              <p>SASS</p>
+              <p class="iconContainer">
+                <i class="fab fa-sass"></i>
+              </p>
+              <p class="skill">SASS</p>
             </li>
             <li data-aos="zoom-in">
-              <i class="fas fa-mobile-alt"></i>
-              <p>Responsive Design</p>
+              <p class="iconContainer">
+                <i class="fas fa-mobile-alt"></i>
+              </p>
+              <p class="skill">Responsive Design</p>
             </li>
             <li data-aos="zoom-in">
-              <i class="fab fa-js"></i>
-              <p>JavaScript</p>
+              <p class="iconContainer">
+                <i class="fab fa-js"></i>
+              </p>
+              <p class="skill">JavaScript</p>
             </li>
             <li data-aos="zoom-in">
-              <i class="devicon-jquery-plain"></i>
-              <p>jQuery</p>
+              <p class="iconContainer">
+                <i class="devicon-jquery-plain"></i>
+              </p>
+              <p class="skill">jQuery</p>
             </li>
             <li data-aos="zoom-in">
-              <i class="fab fa-react"></i>
-              <p>React</p>
+              <p class="iconContainer">
+                <i class="fab fa-react"></i>
+              </p>
+              <p class="skill">React</p>
             </li>
-
             <li data-aos="zoom-in">
-              <i class="fab fa-github"></i>
-              <p>GitHub</p>
+              <p class="iconContainer">
+                <i class="fab fa-github"></i>
+              </p>
+              <p class="skill">GitHub</p>
             </li>
-
             <li data-aos="zoom-in">
-              <i class="devicon-visualstudio-plain"></i>
-              <p>VS Code</p>
+              <p class="iconContainer">
+                <i class="devicon-visualstudio-plain"></i>
+              </p>
+              <p class="skill">VS Code</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- My Recent Works -->
+      <!-- My Recent Works---------------------------------------->
+
       <section id="myRecentWorks">
         <div class="wrapper">
           <!-- title -->
           <h3 class="titleRecentWorks">My Recent Works</h3>
+          <!-- project list -->
           <ul class="projectList">
-            <li class="itemOne activeStatus" data-aos="fade-down">
-              Through The Lens
+            <li class="itemOne activeStatus" data-aos="flip-left">
+              HaikYou
             </li>
-            <li class="itemTwo" data-aos="fade-down">Spelling Wizard</li>
-            <li class="itemThree" data-aos="fade-down">Haikue</li>
+            <li class="itemTwo" data-aos="flip-right">Spelling Bee</li>
+            <li class="itemThree" data-aos="flip-left">Through The Lens</li>
           </ul>
-          <!-- container for project Image -->
-          <div class="projectImageContainer" data-aos="zoom-out-down">
-            <img src="styles/assets/projectImageOne.png" />
-          </div>
-          <!-- project details -->
-          <div class="projectDetails">
-            <div class="projectDetailsOne">
-              <p>A portfolio site of a photography agency built in HTML, CSS</p>
+          <!-- project details including the image and description-->
+          <div class="projectsContainer">
+            <!-- project Image -->
+            <div class="projectImageContainer" data-aos="zoom-out-down">
+              <img src="styles/assets/projectImageOne.png" />
             </div>
-            <div class="projectDetailsTwo">
-              <p>Technology: HTML, CSS</p>
-            </div>
-            <div class="projectDetailsThree">
-              <div class="buttonContainer">
-                <div class="liveButtonContainer">
-                  <button><a href="#">Live</a></button>
-                </div>
-                <div class="gitButtonContainer">
-                  <button><a href="#">github</a></button>
+            <!-- project details -->
+            <div class="projectDetails">
+              <!-- description -->
+              <div class="projectDetailsOne">
+                <p class="type">React, Firebase & Datamuse API Application</p>
+                <p class="line"></p>
+                <p class="description">
+                  A fully responsive React application that utilizes Datamuse
+                  API and Google Firebase's Database that allow users to create
+                  their own haiku poems.Developed in collboration with Sarah
+                  Vieira, Alyne Alvarenga, and Norman Hussey.
+                </p>
+              </div>
+              <!-- technology -->
+              <div class="projectDetailsTwo">
+                <p>
+                  <span class="tech">React</span>
+                  <span class="tech">Firebase</span>
+                  <span class="tech">Javascript</span>
+                  <span class="tech">APIs</span>
+                  <span class="tech">CSS</span>
+                  <span class="tech">HTML</span>
+                </p>
+              </div>
+              <!-- buttons -->
+              <div class="projectDetailsThree">
+                <div class="buttonContainer">
+                  <div class="liveButtonContainer">
+                    <a
+                      href="https://haikus-highway.github.io/haikus-highway/"
+                      class="live"
+                      >Live
+                    </a>
+                  </div>
+                  <div class="gitButtonContainer">
+                    <a
+                      href="https://github.com/haikus-highway/haikus-highway"
+                      class="git"
+                      >github
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -180,10 +247,11 @@
         </div>
       </section>
 
-      <!-- Get in Touch -->
+      <!-- Get in Touch ----------------------------------------------->
 
       <section id="contact" class="contact">
         <div class="wrapper contactContainer">
+          <!-- text and icon -->
           <div class="contactText">
             <h3>Let's Get in Touch</h3>
             <p class="backgroundText">Contact</p>
@@ -196,7 +264,22 @@
             <p class="contactInfo">
               <i class="fas fa-map-marker-alt"></i>Toronto, Ontario
             </p>
+            <div class="socialMedia">
+              <a href="https://twitter.com/PriankaFarzana">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/far-pri/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/FarzanaPrianka">
+                <i class="fab fa-github-square"></i>
+              </a>
+              <a href="https://dev.to/priankafarzana">
+                <i class="fab fa-dev"></i>
+              </a>
+            </div>
           </div>
+          <!-- form -->
           <div class="formContainer">
             <form
               data-aos="fade-left"
@@ -211,7 +294,6 @@
                   placeholder="Enter Your Name"
                 />
               </div>
-
               <div>
                 <input
                   id="email"
@@ -220,7 +302,6 @@
                   placeholder="Enter Your Mail"
                 />
               </div>
-
               <textarea
                 name="message"
                 placeholder="Here Goes Your Message"
@@ -233,10 +314,12 @@
           </div>
         </div>
       </section>
+
+      <!-- footer -->
       <footer>
         <div>
           <p class="footerNote">
-            Developed and Designed by Farzana Prianka(Site Under Construction)
+            Farzana Prianka &copy; 2020
           </p>
         </div>
       </footer>
@@ -248,9 +331,6 @@
       integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
       crossorigin="anonymous"
     ></script>
-
-    <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="app.js"></script>
 
     <!-- connect JS file -->
     <script type="text/javascript" src="script.js"></script>

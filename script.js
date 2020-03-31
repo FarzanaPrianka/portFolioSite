@@ -106,7 +106,9 @@ function portfilio() {
     );
 
     //image
-    $(".projectImageContainer").html(`<img src=${projectOneImage}>`);
+    $(".projectImageContainer").html(
+      `<img src=${projectOneImage} alt="project one image">`
+    );
 
     //others ac
     $(this).addClass("activeStatus");
@@ -144,7 +146,9 @@ function portfilio() {
       </div>`);
 
     //image
-    $(".projectImageContainer").html(`<img src=${projectTwoImage}>`);
+    $(".projectImageContainer").html(
+      `<img src=${projectTwoImage} alt="project two image">`
+    );
 
     //others
     $(this).addClass("activeStatus");
@@ -182,7 +186,9 @@ function portfilio() {
       </div>`);
 
     //image
-    $(".projectImageContainer").html(`<img src=${projectThreeImage}>`);
+    $(".projectImageContainer").html(
+      `<img src=${projectThreeImage} alt="project three image">`
+    );
 
     //others
     $(this).addClass("activeStatus");

@@ -60,12 +60,12 @@ function navigation() {
   });
 
   //when window resizes less than 768px
-  window.onresize = function(event) {
-    viewportwidth = $(window).width();
-    if (viewportwidth < 768) {
-      $(".navListContainer").css("display", "block");
-    }
-  };
+  // window.onresize = function(event) {
+  //   viewportwidth = $(window).width();
+  //   if (viewportwidth < 768) {
+  //     $(".navListContainer").css("display", "block");
+  //   }
+  // };
 }
 
 //-------------------------My Recent Works---------------------------------

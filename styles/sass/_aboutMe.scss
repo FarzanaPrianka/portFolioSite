@@ -42,15 +42,17 @@
 }
 
 .aboutMeTextContainer p {
-  padding-right: 30px;
+  padding-right: 45px;
   font-size: 1.5rem;
-  line-height: 1.8;
+  line-height: 1.5;
   margin: 0;
+  text-align: justify;
 }
 
 @media (max-width: 980px) {
   .aboutMeContainerRight {
     flex-direction: column;
+    padding-bottom: 40px;
   }
 
   .aboutMeContainer {

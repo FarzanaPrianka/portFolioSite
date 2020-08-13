@@ -42,8 +42,8 @@
 }
 
 .aboutMeTextContainer p {
-  padding-right: 45px;
-  font-size: 1.5rem;
+  padding-right: 50px;
+  font-size: 1.4rem;
   line-height: 1.5;
   margin: 0;
   text-align: justify;
@@ -90,5 +90,6 @@
 @media (max-width: 550px) {
   .aboutMeTextContainer p {
     font-size: 1rem;
+    
   }
 }

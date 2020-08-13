@@ -2,8 +2,8 @@
 
 //for hello world
 function helloWorld() {
-  setTimeout(headerLineOne, 500);
-  setTimeout(headerLineTwo, 4000);
+  setTimeout(headerLineOne, 400);
+  setTimeout(headerLineTwo, 2000);
 }
 
 // for typewritter effect in h1
@@ -17,8 +17,7 @@ function headerLineOne() {
 
 function headerLineTwo() {
   let i = 0;
-  let text = `I'm Farzana Prianka. A front-end web developer based in
-Toronto`;
+  let text = `I'm Farzana Prianka. A front-end web developer come designer with a passion for UX/UI design`;
   let speed = 70;
 
   function typewritter() {
@@ -37,21 +36,21 @@ Toronto`;
 
 function navigation() {
   //when click the hamburger menu
-  $(".fa-bars").on("click", function() {
+  $(".fa-bars").on("click", function () {
     $(".navListContainer").css("display", "block");
     $(".cancel").css("display", "initial");
     $(this).css("display", "none");
   });
 
   //when click the cancel sign
-  $(".cancel").on("click", function() {
+  $(".cancel").on("click", function () {
     $(this).css("display", "none");
     $(".fa-bars").css("display", "initial");
     $(".navListContainer").css("display", "none");
   });
 
   //when click the navigation options
-  $(".navList li").on("click", function() {
+  $(".navList li").on("click", function () {
     if ($(window).width() <= 768) {
       $(".navListContainer").css("display", "none");
       $(".fa-bars").css("display", "initial");
@@ -72,18 +71,18 @@ function navigation() {
 
 function portfilio() {
   //when user clicks first project...........
-  $(".itemOne").on("click", function() {
+  $(".itemOne").on("click", function () {
     let projectOneLinkLive = "https://haikus-highway.github.io/haikus-highway/";
     let projectOneLinkGit = "https://github.com/haikus-highway/haikus-highway";
     let projectOneImage = "styles/assets/projectImageOne.png";
 
     //description text
     $(".projectDetailsOne").html(`
-      <p class="type">React, Firebase & Datamuse API Application</p>
+      <p class="type">HaikYou</p>
       <p class="line"></p>
       <p class="description">A fully responsive React application that utilizes Datamuse
          API and Google Firebase's Database that allow users to create
-         their own haiku poems.Developed in collboration with Sarah Vieira, Alyne Alvarenga, and Norman Hussey.
+         their own haiku poems.Designed and developed in collboration with Sarah Vieira, Alyne Alvarenga, and Norman Hussey.
       </p>`);
 
     //list of used technology
@@ -114,19 +113,23 @@ function portfilio() {
     $(this).addClass("activeStatus");
     $(".itemTwo").removeClass("activeStatus");
     $(".itemThree").removeClass("activeStatus");
+    $(".itemFour").removeClass("activeStatus");
+    $(".itemFive").removeClass("activeStatus");
+    $(".itemSix").removeClass("activeStatus");
+
   });
 
-  // when user clicks on second project..............
-  $(".itemTwo").on("click", function() {
+  // when user clicks on second project--------------------
+  $(".itemTwo").on("click", function () {
     let projectTwoLinkLive = "https://farzanaprianka.github.io/spellingWizard/";
     let projectTwoLinkGit = "https://github.com/FarzanaPrianka/spellingWizard";
     let projectTwoImage = "styles/assets/projectImageTwo.png";
 
     //description text
     $(".projectDetailsOne").html(`
-      <p class="type">Javascript Game Application</p>
+      <p class="type">Spelling Bee</p>
       <p class="line"></p>
-      <p class="description">A fully responsive interactive quiz where users can test their spelling skills</p>`);
+      <p class="description">Designed and developed a fully responsive javascript game application where users can test their spelling skills</p>`);
 
     //list of technology used
     $(".projectDetailsTwo").html(`
@@ -154,10 +157,13 @@ function portfilio() {
     $(this).addClass("activeStatus");
     $(".itemOne").removeClass("activeStatus");
     $(".itemThree").removeClass("activeStatus");
+    $(".itemFour").removeClass("activeStatus");
+    $(".itemFive").removeClass("activeStatus");
+    $(".itemSix").removeClass("activeStatus");
   });
 
-  //when user click the third project
-  $(".itemThree").on("click", function() {
+  //when user click the third project----------------------------
+  $(".itemThree").on("click", function () {
     let projectThreeLinkLive =
       "https://farzanaprianka.github.io/throughTheLens/";
     let projectThreeLinkGit =
@@ -166,9 +172,9 @@ function portfilio() {
 
     //description text
     $(".projectDetailsOne").html(`
-      <p class="type">Website Design</p>
+      <p class="type">Though the Lens</p>
       <p class="line"></p>
-      <p class="description">Designed and developed a pixel perfact, fully responsive online photography portfolio</p>`);
+      <p class="description">Designed and developed a pixel perfect, fully responsive landing page which showcase portfolio of a photographer</p>`);
 
     //list of technology used
     $(".projectDetailsTwo").html(`
@@ -194,6 +200,140 @@ function portfilio() {
     $(this).addClass("activeStatus");
     $(".itemOne").removeClass("activeStatus");
     $(".itemTwo").removeClass("activeStatus");
+    $(".itemFour").removeClass("activeStatus");
+    $(".itemFive").removeClass("activeStatus");
+    $(".itemSix").removeClass("activeStatus");
+  });
+
+  //when user click the fourth project----------------------------
+  $(".itemFour").on("click", function () {
+    let projectFourLinkLive =
+      "https://farzanaprianka.github.io/farzana-prianka-project-two/";
+    let projectFourLinkGit =
+      "https://github.com/FarzanaPrianka/farzana-prianka-project-two";
+    let projectFourImage = "styles/assets/projectImageFour.png";
+
+    //description text
+    $(".projectDetailsOne").html(`
+      <p class="type">Sophie</p>
+      <p class="line"></p>
+      <p class="description">Multi-page PSD conversion made from client brief and design files using flex for layout. Responsive across devices.</p>`);
+
+    //list of technology used
+    $(".projectDetailsTwo").html(`
+      <p>
+        <span class="tech">Responsive Design</span>
+        <span class="tech">SASS</span> 
+        <span class="tech">CSS3</span>
+        <span class="tech">HTML5</span> 
+      </p>`);
+
+    //buttons
+    $(".projectDetailsThree").html(`
+      <div class="buttonContainer">
+        <div class="liveButtonContainer"><a href="${projectFourLinkLive}">Live</a></div>
+        <div class="gitButtonContainer"><a href="${projectFourLinkGit}">github</a></div>
+      </div>`);
+
+    //image
+    $(".projectImageContainer").html(
+      `<img src=${projectFourImage} alt="project three image">`
+    );
+
+    //others
+    $(this).addClass("activeStatus");
+    $(".itemOne").removeClass("activeStatus");
+    $(".itemTwo").removeClass("activeStatus");
+    $(".itemThree").removeClass("activeStatus");
+    $(".itemFive").removeClass("activeStatus");
+    $(".itemSix").removeClass("activeStatus");
+
+  });
+
+  //when user click the fifth project-----------------------------
+  $(".itemFive").on("click", function () {
+    let projectFiveLinkLive =
+      "https://farzanaprianka.github.io/farzana-prianka-project-1/";
+    let projectFiveLinkGit =
+      "https://github.com/FarzanaPrianka/farzana-prianka-project-1";
+    let projectFiveImage = "styles/assets/projectImageFive.png";
+
+    //description text
+    $(".projectDetailsOne").html(`
+      <p class="type">Tasty</p>
+      <p class="line"></p>
+      <p class="description">Single page PSD conversion made from client brief and design files using floats for layout. Responsive across devices.</p>`);
+
+    //list of technology used
+    $(".projectDetailsTwo").html(`
+      <p>
+        <span class="tech">Responsive Design</span>
+        <span class="tech">CSS3</span>
+        <span class="tech">HTML5</span> 
+      </p>`);
+
+    //buttons
+    $(".projectDetailsThree").html(`
+      <div class="buttonContainer">
+        <div class="liveButtonContainer"><a href="${projectFiveLinkLive}">Live</a></div>
+        <div class="gitButtonContainer"><a href="${projectFiveLinkGit}">github</a></div>
+      </div>`);
+
+    //image
+    $(".projectImageContainer").html(
+      `<img src=${projectFiveImage} alt="project three image">`
+    );
+
+    //others
+    $(this).addClass("activeStatus");
+    $(".itemOne").removeClass("activeStatus");
+    $(".itemTwo").removeClass("activeStatus");
+    $(".itemThree").removeClass("activeStatus");
+    $(".itemFour").removeClass("activeStatus");
+    $(".itemSix").removeClass("activeStatus");
+  });
+
+  //when user click the sixth project-----------------------------
+  $(".itemSix").on("click", function () {
+    let projectSixLinkLive =
+      "https://farzanaprianka.github.io/ZAP/";
+    let projectSixLinkGit =
+      "https://github.com/FarzanaPrianka/ZAP";
+    let projectSixImage = "styles/assets/projectImageSix.png";
+
+    //description text
+    $(".projectDetailsOne").html(`
+      <p class="type">ZAP</p>
+      <p class="line"></p>
+      <p class="description">Single page PSD conversion made from client brief and design files using flex for layout. Responsive across devices.</p>`);
+
+    //list of technology used
+    $(".projectDetailsTwo").html(`
+      <p>
+        <span class="tech">Responsive Design</span>
+        <span class="tech">CSS3</span>
+        <span class="tech">HTML5</span> 
+      </p>`);
+
+    //buttons
+    $(".projectDetailsThree").html(`
+      <div class="buttonContainer">
+        <div class="liveButtonContainer"><a href="${projectSixLinkLive}">Live</a></div>
+        <div class="gitButtonContainer"><a href="${projectSixLinkGit}">github</a></div>
+      </div>`);
+
+    //image
+    $(".projectImageContainer").html(
+      `<img src=${projectSixImage} alt="project six image">`
+    );
+
+    //others
+    $(this).addClass("activeStatus");
+    $(".itemOne").removeClass("activeStatus");
+    $(".itemTwo").removeClass("activeStatus");
+    $(".itemThree").removeClass("activeStatus");
+    $(".itemFour").removeClass("activeStatus");
+    $(".itemFive").removeClass("activeStatus");
   });
 }
 
@@ -202,7 +342,7 @@ function portfilio() {
 const app = {};
 
 //start the app
-app.init = function() {
+app.init = function () {
   //load header page
   helloWorld();
   //navigation
@@ -211,6 +351,6 @@ app.init = function() {
   portfilio();
 };
 
-$(function() {
+$(function () {
   app.init();
 });

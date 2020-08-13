@@ -17,13 +17,14 @@
   list-style: none;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 5vh 0 12vh;
 }
 
 .projectList li {
-  width: 20vmax;
-  font-size: 1.9vmax;
+  width: 70px;
+  border-radius: 50%;
+  font-size: 1.5vmax;
   padding: 20px;
   text-align: center;
   transition: all 0.5s;
@@ -34,7 +35,9 @@
   font-weight: bold;
   transform: translateY(-10px);
   cursor: crosshair;
-  background-color: rgba(239, 199, 194, 0.3);
+  border: 2px solid $primaryColor;
+  background-color: white;
+  color: $thirdColor;
 }
 
 //project details
@@ -151,11 +154,11 @@
 }
 
 .activeStatus {
-  color: $primaryColor;
+  color: $seventhColor;
   font-size: 40px;
   font-weight: bold;
   border-bottom: 2.9px solid $primaryColor;
-  background-color: rgb(238, 245, 239);
+  background-color: $primaryColor;
 }
 
 //responsive design----------------------------------------------------
@@ -183,19 +186,19 @@
 
 @media (max-width: 650px) {
   .projectList {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
     padding: 0 0 8vh;
   }
 
   .projectList li {
-    width: 50%;
+    width: 55px;
+    padding: 15px;
   }
 
   .description,
-  .tech,
-  .projectList li {
+  .tech {
     font-size: 3.5vmax;
   }
 

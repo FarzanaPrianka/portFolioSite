@@ -719,15 +719,16 @@ header p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 5vh 0 12vh;
 }
 
 .projectList li {
-  width: 20vmax;
-  font-size: 1.9vmax;
+  width: 70px;
+  border-radius: 50%;
+  font-size: 1.5vmax;
   padding: 20px;
   text-align: center;
   -webkit-transition: all 0.5s;
@@ -740,7 +741,9 @@ header p {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   cursor: crosshair;
-  background-color: rgba(239, 199, 194, 0.3);
+  border: 2px solid #02aab0;
+  background-color: white;
+  color: #4b4d5d;
 }
 
 .projectsContainer {
@@ -866,11 +869,11 @@ header p {
 }
 
 .activeStatus {
-  color: #02aab0;
+  color: gold;
   font-size: 40px;
   font-weight: bold;
   border-bottom: 2.9px solid #02aab0;
-  background-color: #eef5ef;
+  background-color: #02aab0;
 }
 
 @media (max-width: 768px) {
@@ -894,24 +897,14 @@ header p {
 
 @media (max-width: 650px) {
   .projectList {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 0 0 8vh;
   }
   .projectList li {
-    width: 50%;
+    width: 55px;
+    padding: 15px;
   }
   .description,
-  .tech,
-  .projectList li {
+  .tech {
     font-size: 3.5vmax;
   }
   .type {

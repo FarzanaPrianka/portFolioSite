@@ -116,6 +116,7 @@ function portfilio() {
     $(".itemFour").removeClass("activeStatus");
     $(".itemFive").removeClass("activeStatus");
     $(".itemSix").removeClass("activeStatus");
+    $(".itemSeven").removeClass("activeStatus");
 
   });
 
@@ -160,6 +161,7 @@ function portfilio() {
     $(".itemFour").removeClass("activeStatus");
     $(".itemFive").removeClass("activeStatus");
     $(".itemSix").removeClass("activeStatus");
+    $(".itemSeven").removeClass("activeStatus");
   });
 
   //when user click the third project----------------------------
@@ -203,6 +205,7 @@ function portfilio() {
     $(".itemFour").removeClass("activeStatus");
     $(".itemFive").removeClass("activeStatus");
     $(".itemSix").removeClass("activeStatus");
+    $(".itemSeven").removeClass("activeStatus");
   });
 
   //when user click the fourth project----------------------------
@@ -247,6 +250,7 @@ function portfilio() {
     $(".itemThree").removeClass("activeStatus");
     $(".itemFive").removeClass("activeStatus");
     $(".itemSix").removeClass("activeStatus");
+    $(".itemSeven").removeClass("activeStatus");
 
   });
 
@@ -291,6 +295,7 @@ function portfilio() {
     $(".itemThree").removeClass("activeStatus");
     $(".itemFour").removeClass("activeStatus");
     $(".itemSix").removeClass("activeStatus");
+    $(".itemSeven").removeClass("activeStatus");
   });
 
   //when user click the sixth project-----------------------------
@@ -334,6 +339,53 @@ function portfilio() {
     $(".itemThree").removeClass("activeStatus");
     $(".itemFour").removeClass("activeStatus");
     $(".itemFive").removeClass("activeStatus");
+    $(".itemSeven").removeClass("activeStatus");
+  });
+
+  //when user click the seventh project-----------------------------
+  $(".itemSeven").on("click", function () {
+    let projectSevenLinkLive =
+      "https://farzanaprianka.github.io/project-five/";
+    let projectSevenLinkGit =
+      "https://github.com/FarzanaPrianka/project-five";
+    let projectSevenImage = "styles/assets/projectImageSeven.png";
+
+    //description text
+    $(".projectDetailsOne").html(`
+      <p class="type">Lock the Date</p>
+      <p class="line"></p>
+      <p class="description">A fully resposnive React application that allows the users to log their friend's and family's birthday</p>`);
+
+    //list of technology used
+    $(".projectDetailsTwo").html(`
+      <p>
+        <span class="tech">React</span>
+        <span class="tech">Firebase</span>
+        <span class="tech">Responsive Design</span>
+        <span class="tech">CSS3</span>
+        <span class="tech">HTML5</span> 
+      </p>`);
+
+    //buttons
+    $(".projectDetailsThree").html(`
+      <div class="buttonContainer">
+        <div class="liveButtonContainer"><a href="${projectSevenLinkLive}">Live</a></div>
+        <div class="gitButtonContainer"><a href="${projectSevenLinkGit}">github</a></div>
+      </div>`);
+
+    //image
+    $(".projectImageContainer").html(
+      `<img src=${projectSevenImage} alt="project seven image">`
+    );
+
+    //others
+    $(this).addClass("activeStatus");
+    $(".itemOne").removeClass("activeStatus");
+    $(".itemTwo").removeClass("activeStatus");
+    $(".itemThree").removeClass("activeStatus");
+    $(".itemFour").removeClass("activeStatus");
+    $(".itemFive").removeClass("activeStatus");
+    $(".itemSix").removeClass("activeStatus");
   });
 }
 

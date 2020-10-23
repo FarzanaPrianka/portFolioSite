@@ -17,7 +17,7 @@ function headerLineOne() {
 
 function headerLineTwo() {
   let i = 0;
-  let text = `I'm Farzana Prianka. A front-end web developer come designer with a passion for UX/UI design`;
+  let text = `I'm Farzana Prianka. A UX designer and developer based in Toronto.`;
   let speed = 70;
 
   function typewritter() {
@@ -70,37 +70,102 @@ function navigation() {
 //-------------------------My Recent Works---------------------------------
 
 function portfilio() {
-  //when user clicks first project...........
-  $(".itemOne").on("click", function () {
-    let projectOneLinkLive = "https://haikus-highway.github.io/haikus-highway/";
-    let projectOneLinkGit = "https://github.com/haikus-highway/haikus-highway";
-    let projectOneImage = "styles/assets/projectImageOne.png";
+
+  //Ux Case Studies......................................................................................
+  //when user clicks the first ux case study
+
+  $(".caseOne").on("click", function () {
+    let uXProjectOneLinkLive = "https://farzanaprianka.github.io/uniqlo/";
+    let uXProjectOneImage = "styles/assets/uxCaseOne.png";
 
     //description text
-    $(".projectDetailsOne").html(`
-      <p class="type">HaikYou</p>
+    $(".uXprojectDetailsOne").html(`
+      <p class="name">Redesign Uniqlo's iOS App</p>
       <p class="line"></p>
-      <p class="description">A fully responsive React application that utilizes Datamuse
-         API and Google Firebase's Database that allow users to create
-         their own haiku poems.Designed and developed in collboration with Sarah Vieira, Alyne Alvarenga, and Norman Hussey.
+      <p class="uXDescription">User Research, Interaction, Visual design, Prototyping & Testing
       </p>`);
 
+    //view case study
+    $(".viewCaseStudy").html(
+      `
+          <div><a href="${uXProjectOneLinkLive}">View Case Study</a></div>
+      `
+    );
+
+    //image
+    $(".uXImageContainer").html(
+      `<img src=${uXProjectOneImage} alt="project one image">`
+    );
+
+    //others ac
+    $(this).addClass("activeStatus");
+    $(".caseTwo").removeClass("activeStatus");
+
+
+  });
+
+  //when user clicks the second ux case study
+
+  $(".caseTwo").on("click", function () {
+    let uXProjectTwoLinkLive = "https://farzanaprianka.github.io/uxPortfolioMetro/";
+    let uXProjectTwoImage = "styles/assets/uxCaseTwo.png";
+
+    //description text
+    $(".uXprojectDetailsOne").html(`
+      <p class="name">UX Research on Metro</p>
+      <p class="line"></p>
+      <p class="uXDescription">User Interview, Usability Test, Heuristics Analysis, Accessibility Audit
+      </p>`);
+
+    //view case study
+    $(".viewCaseStudy").html(
+      `
+          <div><a href="${uXProjectTwoLinkLive}">View Case Study</a></div>
+      `
+    );
+
+    //image
+    $(".uXImageContainer").html(
+      `<img src=${uXProjectTwoImage} alt="project two image">`
+    );
+
+    //others ac
+    $(this).addClass("activeStatus");
+    $(".caseOne").removeClass("activeStatus");
+
+
+  });
+
+  // My recent codes...........................................................................
+  //when user clicks first project...........
+  $(".itemOne").on("click", function () {
+    let projectOneLinkLive = "https://farzanaprianka.github.io/throughTheLens/";
+    let projectOneLinkGit = "https://github.com/FarzanaPrianka/throughTheLens";
+    let projectOneImage = "styles/assets/projectImageThree.png";
+
+    //description text
+
+    $(".projectDetailsOne").html(`
+      <p class="type">Through The Lens</p>
+      <p class="line"></p>
+      <p class="description">Designed and developed a pixel perfect, fully responsive landing page of a website which showcase portfolio of a photographer</p>`);
+
+
     //list of used technology
+
     $(".projectDetailsTwo").html(`
       <p>
-        <span class="tech">React</span>
-        <span class="tech">Firebase</span>
-        <span class="tech">Javascript</span>
-        <span class="tech">APIs</span>
-        <span class="tech">CSS3</span>
-        <span class="tech">HTML5</span>
+        <span class="tech">Responsive Design, </span>
+        <span class="tech">CSS3, </span>
+        <span class="tech">HTML5</span> 
       </p>`);
+
 
     //view live and git button
     $(".projectDetailsThree").html(
       `<div class="buttonContainer">
           <div class="liveButtonContainer"><a href="${projectOneLinkLive}">Live</a></div>
-          <div class="gitButtonContainer"><a href="${projectOneLinkGit}">github</a></div>
+          <div class="gitButtonContainer"><a href="${projectOneLinkGit}">GitHub</a></div>
       </div>`
     );
 
@@ -135,18 +200,18 @@ function portfilio() {
     //list of technology used
     $(".projectDetailsTwo").html(`
     <p>
-      <span class="tech">Javascript </span>
-      <span class="tech">jQuery</span> 
-      <span class="tech">CSS3</span> 
-      <span class="tech">SASS</span>
-      <span class="tech">HTML5</span>
+      <span class="tech">Javascript, </span>
+      <span class="tech"> jQuery,</span> 
+      <span class="tech"> CSS3,</span> 
+      <span class="tech"> SASS,</span>
+      <span class="tech"> HTML5</span>
     </p>`);
 
     //buttons
     $(".projectDetailsThree").html(`
       <div class="buttonContainer">
         <div class="liveButtonContainer"><a href="${projectTwoLinkLive}">Live</a></div>
-        <div class="gitButtonContainer"><a href="${projectTwoLinkGit}">github</a></div>
+        <div class="gitButtonContainer"><a href="${projectTwoLinkGit}">GitHub</a></div>
       </div>`);
 
     //image
@@ -167,30 +232,42 @@ function portfilio() {
   //when user click the third project----------------------------
   $(".itemThree").on("click", function () {
     let projectThreeLinkLive =
-      "https://farzanaprianka.github.io/throughTheLens/";
+      "https://haikus-highway.github.io/haikus-highway/";
     let projectThreeLinkGit =
-      "https://github.com/FarzanaPrianka/throughTheLens";
-    let projectThreeImage = "styles/assets/projectImageThree.png";
+      "https://github.com/haikus-highway/haikus-highway";
+
+
+    let projectThreeImage = "styles/assets/projectImageOne.png";
 
     //description text
+
+
     $(".projectDetailsOne").html(`
-      <p class="type">Though the Lens</p>
+      <p class="type">HaikYou</p>
       <p class="line"></p>
-      <p class="description">Designed and developed a pixel perfect, fully responsive landing page which showcase portfolio of a photographer</p>`);
+      <p class="description">A fully responsive React application that utilizes Datamuse
+         API and Google Firebase's Database that allow users to create
+         their own haiku poems.
+      </p>`);
 
     //list of technology used
+
+
     $(".projectDetailsTwo").html(`
       <p>
-        <span class="tech">Responsive Design</span>
-        <span class="tech">CSS3</span>
-        <span class="tech">HTML5</span> 
+        <span class="tech">React,</span>
+        <span class="tech">Firebase,</span>
+        <span class="tech">Javascript,</span>
+        <span class="tech">APIs,</span>
+        <span class="tech">CSS3,</span>
+        <span class="tech">HTML5</span>
       </p>`);
 
     //buttons
     $(".projectDetailsThree").html(`
       <div class="buttonContainer">
         <div class="liveButtonContainer"><a href="${projectThreeLinkLive}">Live</a></div>
-        <div class="gitButtonContainer"><a href="${projectThreeLinkGit}">github</a></div>
+        <div class="gitButtonContainer"><a href="${projectThreeLinkGit}">GitHub</a></div>
       </div>`);
 
     //image
@@ -225,9 +302,9 @@ function portfilio() {
     //list of technology used
     $(".projectDetailsTwo").html(`
       <p>
-        <span class="tech">Responsive Design</span>
-        <span class="tech">SASS</span> 
-        <span class="tech">CSS3</span>
+        <span class="tech">Responsive Design, </span>
+        <span class="tech">SASS, </span> 
+        <span class="tech">CSS3, </span>
         <span class="tech">HTML5</span> 
       </p>`);
 
@@ -235,7 +312,7 @@ function portfilio() {
     $(".projectDetailsThree").html(`
       <div class="buttonContainer">
         <div class="liveButtonContainer"><a href="${projectFourLinkLive}">Live</a></div>
-        <div class="gitButtonContainer"><a href="${projectFourLinkGit}">github</a></div>
+        <div class="gitButtonContainer"><a href="${projectFourLinkGit}">GitHub</a></div>
       </div>`);
 
     //image
@@ -271,8 +348,8 @@ function portfilio() {
     //list of technology used
     $(".projectDetailsTwo").html(`
       <p>
-        <span class="tech">Responsive Design</span>
-        <span class="tech">CSS3</span>
+        <span class="tech">Responsive Design, </span>
+        <span class="tech">CSS3, </span>
         <span class="tech">HTML5</span> 
       </p>`);
 
@@ -280,7 +357,7 @@ function portfilio() {
     $(".projectDetailsThree").html(`
       <div class="buttonContainer">
         <div class="liveButtonContainer"><a href="${projectFiveLinkLive}">Live</a></div>
-        <div class="gitButtonContainer"><a href="${projectFiveLinkGit}">github</a></div>
+        <div class="gitButtonContainer"><a href="${projectFiveLinkGit}">GitHub</a></div>
       </div>`);
 
     //image
@@ -315,8 +392,8 @@ function portfilio() {
     //list of technology used
     $(".projectDetailsTwo").html(`
       <p>
-        <span class="tech">Responsive Design</span>
-        <span class="tech">CSS3</span>
+        <span class="tech">Responsive Design, </span>
+        <span class="tech">CSS3, </span>
         <span class="tech">HTML5</span> 
       </p>`);
 
@@ -324,7 +401,7 @@ function portfilio() {
     $(".projectDetailsThree").html(`
       <div class="buttonContainer">
         <div class="liveButtonContainer"><a href="${projectSixLinkLive}">Live</a></div>
-        <div class="gitButtonContainer"><a href="${projectSixLinkGit}">github</a></div>
+        <div class="gitButtonContainer"><a href="${projectSixLinkGit}">GitHub</a></div>
       </div>`);
 
     //image
@@ -359,10 +436,10 @@ function portfilio() {
     //list of technology used
     $(".projectDetailsTwo").html(`
       <p>
-        <span class="tech">React</span>
-        <span class="tech">Firebase</span>
-        <span class="tech">Responsive Design</span>
-        <span class="tech">CSS3</span>
+        <span class="tech">React, </span>
+        <span class="tech">Firebase, </span>
+        <span class="tech">Responsive Design, </span>
+        <span class="tech">CSS3, </span>
         <span class="tech">HTML5</span> 
       </p>`);
 
@@ -370,7 +447,7 @@ function portfilio() {
     $(".projectDetailsThree").html(`
       <div class="buttonContainer">
         <div class="liveButtonContainer"><a href="${projectSevenLinkLive}">Live</a></div>
-        <div class="gitButtonContainer"><a href="${projectSevenLinkGit}">github</a></div>
+        <div class="gitButtonContainer"><a href="${projectSevenLinkGit}">GitHub</a></div>
       </div>`);
 
     //image

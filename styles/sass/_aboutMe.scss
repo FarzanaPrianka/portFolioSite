@@ -49,6 +49,24 @@
   text-align: justify;
 }
 
+.aboutSocialMedia {
+  margin-top: 20px;
+}
+
+.aboutSocialMedia i {
+  font-size: 3rem;
+  transition: all 0.5s;
+
+}
+
+.aboutSocialMedia i:hover {
+  transform: scale(1.2);
+  color: $sixthColor;
+
+  
+
+}
+
 @media (max-width: 980px) {
   .aboutMeContainerRight {
     flex-direction: column;
@@ -75,6 +93,10 @@
   .aboutMeTextContainer p {
     padding: 0;
   }
+
+  .aboutSocialMedia i {
+  font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -91,5 +113,9 @@
   .aboutMeTextContainer p {
     font-size: 1rem;
     
+  }
+
+  .aboutSocialMedia i {
+  font-size: 2rem;
   }
 }

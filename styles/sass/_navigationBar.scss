@@ -1,3 +1,7 @@
+nav {
+  border: 1px solid rgba(155, 158, 156, 0.4);
+}
+
 .navListContainer {
   transition: all 0.7s;
 }
@@ -28,14 +32,20 @@
   margin: 15px auto;
   font-size: 1.3rem;
   transition: all 1s;
-  font-weight: bold;
+  
+  
 }
 
 .navList li {
-  padding: 30px 25px;
+  padding: 10px 25px;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  
+  justify-content: center;
+}
+
+.logo {
+  padding: 0;
 }
 
 .diamond {

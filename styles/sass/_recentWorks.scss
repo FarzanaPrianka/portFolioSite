@@ -1,3 +1,71 @@
+.projectsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+//title
+.titleuXCaseStudies {
+  text-align: center;
+  font-size: 3vmax;
+  margin-bottom: 9vmax;
+}
+
+.project {
+  width: 48%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.7s;
+  
+  
+}
+
+.project:hover {
+  box-shadow: 5px 10px 18px #888888;
+  width: 50%;
+  
+  
+}
+
+
+
+.project.uxOne {
+  background-image: url("assets/uniqlo.jpg");
+  position: relative;
+  
+  
+}
+
+.project.uxOne div {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.project.uxTwo {
+  background-image: url("assets/metro.jpg");
+}
+
+.name {
+  text-align: center;
+  color: white;
+  font-size: 2.5vmax;
+  margin: 6vmax auto;
+}
+
+.year {
+  text-align: center;
+  color: white;
+  font-size: 2vmax;
+  margin: 5vmax auto;
+}
+
+
+
 //section
 #myRecentWorks {
   padding: 80px 0;
@@ -22,8 +90,8 @@
 }
 
 .projectList li {
-  width: 70px;
-  border-radius: 50%;
+  // width: 70px;
+  // border-radius: 50%;
   font-size: 1.5vmax;
   padding: 20px;
   text-align: center;
@@ -43,10 +111,7 @@
 }
 
 //project details
-.projectsContainer {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 //project image
 .projectImageContainer {
@@ -160,20 +225,20 @@
   transition: all 0.7s;
 }
 
-.liveButtonContainer:hover .live,
-.gitButtonContainer:hover .git {
-  color: $seventhColor;
-}
+// .liveButtonContainer:hover .live,
+// .gitButtonContainer:hover .git {
+//   // color: $seventhColor;
+// }
 
 .liveButtonContainer a:hover,
 .gitButtonContainer a:hover {
   transform: translateY(-5px);
   box-shadow: 2px 2px 10px 1px $thirdColor;
-  color: $seventhColor;
+  
 }
 
 .activeStatus {
-  color: $seventhColor;
+  color: white;
   font-size: 40px;
   font-weight: bold;
   border-bottom: 2.9px solid $primaryColor;

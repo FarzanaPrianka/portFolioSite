@@ -1,36 +1,37 @@
 // ----------------------header-----------------------------------------
 
 //for hello world
-function helloWorld() {
-  setTimeout(headerLineOne, 400);
-  setTimeout(headerLineTwo, 2000);
-}
+// function helloWorld() {
+//   setTimeout(headerLineOne, 400);
+//   setTimeout(headerLineTwo, 1000);
+// }
 
-// for typewritter effect in h1
-function headerLineOne() {
-  $("#helloWorld")
-    .html(
-      `<span class="arrow"><</span>Hello World<span class="arrow">/></span>`
-    )
-    .fadeTo(2000, 1);
-}
+// //for typewritter effect in h1
+// function headerLineOne() {
+//   $("#helloWorld")
+//     .html(
+//       `<span class="arrow"><</span>Hello World<span class="arrow">/></span>`
+//     )
+//     .fadeTo(2000, 1);
+// }
 
-function headerLineTwo() {
-  let i = 0;
-  let text = `I'm Farzana Prianka. A UX designer and developer based in Toronto.`;
-  let speed = 70;
+// function headerLineTwo() {
+//   let i = 0;
+//   let text = `I'm Farzana Prianka. A UX designer and developer based in Toronto.`;
+//   let speed = 80;
 
-  function typewritter() {
-    if (i < text.length) {
-      let currentText = $("#welcomeText").html();
-      let currentCharacter = text.charAt(i);
-      $("#welcomeText").html(`${currentText}${currentCharacter}`);
-      i++;
-      setTimeout(typewritter, speed);
-    }
-  }
-  typewritter();
-}
+//   function typewritter() {
+//     if (i < text.length) {
+//       let currentText = $("#welcomeText").html();
+//       let currentCharacter = text.charAt(i);
+//       $("#welcomeText").html(`${currentText}${currentCharacter}`);
+//       i++;
+//       setTimeout(typewritter, speed);
+//     }
+//   }
+//   typewritter();
+// }
+
 
 //-------------------------------navigation-----------------------------------
 
@@ -71,71 +72,6 @@ function navigation() {
 
 function portfilio() {
 
-  //Ux Case Studies......................................................................................
-  //when user clicks the first ux case study
-
-  $(".caseOne").on("click", function () {
-    let uXProjectOneLinkLive = "https://farzanaprianka.github.io/uniqlo/";
-    let uXProjectOneImage = "styles/assets/uxCaseOne.png";
-
-    //description text
-    $(".uXprojectDetailsOne").html(`
-      <p class="name">Redesign Uniqlo's iOS App</p>
-      <p class="line"></p>
-      <p class="uXDescription">User Research, Interaction, Visual design, Prototyping & Testing
-      </p>`);
-
-    //view case study
-    $(".viewCaseStudy").html(
-      `
-          <div><a href="${uXProjectOneLinkLive}">View Case Study</a></div>
-      `
-    );
-
-    //image
-    $(".uXImageContainer").html(
-      `<img src=${uXProjectOneImage} alt="project one image">`
-    );
-
-    //others ac
-    $(this).addClass("activeStatus");
-    $(".caseTwo").removeClass("activeStatus");
-
-
-  });
-
-  //when user clicks the second ux case study
-
-  $(".caseTwo").on("click", function () {
-    let uXProjectTwoLinkLive = "https://farzanaprianka.github.io/uxPortfolioMetro/";
-    let uXProjectTwoImage = "styles/assets/uxCaseTwo.png";
-
-    //description text
-    $(".uXprojectDetailsOne").html(`
-      <p class="name">UX Research on Metro</p>
-      <p class="line"></p>
-      <p class="uXDescription">User Interview, Usability Test, Heuristics Analysis, Accessibility Audit
-      </p>`);
-
-    //view case study
-    $(".viewCaseStudy").html(
-      `
-          <div><a href="${uXProjectTwoLinkLive}">View Case Study</a></div>
-      `
-    );
-
-    //image
-    $(".uXImageContainer").html(
-      `<img src=${uXProjectTwoImage} alt="project two image">`
-    );
-
-    //others ac
-    $(this).addClass("activeStatus");
-    $(".caseOne").removeClass("activeStatus");
-
-
-  });
-
   // My recent codes...........................................................................
   //when user clicks first project...........
   $(".itemOne").on("click", function () {
@@ -148,7 +84,7 @@ function portfilio() {
     $(".projectDetailsOne").html(`
       <p class="type">Through The Lens</p>
       <p class="line"></p>
-      <p class="description">Designed and developed a pixel perfect, fully responsive landing page of a website which showcase portfolio of a photographer</p>`);
+      <p class="description">Developed a pixel perfect, fully responsive landing page of a website which showcase portfolio of a photographer</p>`);
 
 
     //list of used technology
@@ -171,7 +107,7 @@ function portfilio() {
 
     //image
     $(".projectImageContainer").html(
-      `<img src=${projectOneImage} alt="project one image">`
+      `<a href="${projectOneLinkLive}"><img src=${projectOneImage} alt="project one image"></a>`
     );
 
     //others ac
@@ -195,7 +131,7 @@ function portfilio() {
     $(".projectDetailsOne").html(`
       <p class="type">Spelling Bee</p>
       <p class="line"></p>
-      <p class="description">Designed and developed a fully responsive javascript game application where users can test their spelling skills</p>`);
+      <p class="description">Developed a fully responsive javascript game application where users can test their spelling skills</p>`);
 
     //list of technology used
     $(".projectDetailsTwo").html(`
@@ -216,7 +152,7 @@ function portfilio() {
 
     //image
     $(".projectImageContainer").html(
-      `<img src=${projectTwoImage} alt="project two image">`
+      `<a href="${projectTwoLinkLive}"><img src=${projectTwoImage} alt="project two image"></a>`
     );
 
     //others
@@ -272,7 +208,7 @@ function portfilio() {
 
     //image
     $(".projectImageContainer").html(
-      `<img src=${projectThreeImage} alt="project three image">`
+      `<a href="${projectThreeLinkLive}"><img src=${projectThreeImage} alt="project three image"></a>`
     );
 
     //others
@@ -317,7 +253,7 @@ function portfilio() {
 
     //image
     $(".projectImageContainer").html(
-      `<img src=${projectFourImage} alt="project three image">`
+      `<a href="${projectFourLinkLive}"><img src=${projectFourImage} alt="project three image"></a>`
     );
 
     //others
@@ -362,7 +298,7 @@ function portfilio() {
 
     //image
     $(".projectImageContainer").html(
-      `<img src=${projectFiveImage} alt="project three image">`
+      `<a href="${projectFiveLinkLive}"><img src=${projectFiveImage} alt="project three image"></a>`
     );
 
     //others
@@ -406,7 +342,7 @@ function portfilio() {
 
     //image
     $(".projectImageContainer").html(
-      `<img src=${projectSixImage} alt="project six image">`
+      `<a href="${projectSixLinkLive}"><img src=${projectSixImage} alt="project six image"></a>`
     );
 
     //others
@@ -452,7 +388,7 @@ function portfilio() {
 
     //image
     $(".projectImageContainer").html(
-      `<img src=${projectSevenImage} alt="project seven image">`
+      `<a href="${projectSevenLinkLive}"><img src=${projectSevenImage} alt="project seven image"></a>`
     );
 
     //others
@@ -473,7 +409,7 @@ const app = {};
 //start the app
 app.init = function () {
   //load header page
-  helloWorld();
+  // helloWorld();
   //navigation
   navigation();
   //My recent works

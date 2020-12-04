@@ -1,13 +1,15 @@
-.logo {
-  width: 25%;
-  margin: 0 auto;
-  padding: 30px 0;
-}
+// .logo {
+//   width: 25%;
+//   margin: 0 auto;
+//   padding: 30px 0;
+//   border: 1px solid red;
+// }
 
-.aboutMeContainer {
-  height: 100vh;
-  display: flex;
-}
+// .aboutMeContainer {
+//   // height: 120vh;
+//   // display: flex;
+
+// }
 
 .aboutMeSection {
   padding-bottom: 100px;
@@ -17,18 +19,21 @@
   width: 80%;
   margin: 0 auto;
   height: 100%;
-  background-color: $fourthColor;
+  // border: 5px solid red;
+  // background-color: $fourthColor;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .aboutMeImageContainer {
-  width: 50%;
+  width: 300px;
   position: relative;
   right: 50px;
   height: 78%;
   margin: auto auto;
+  border: 5px solid black;
+  
 }
 
 .aboutMeTextContainer {
@@ -46,7 +51,7 @@
   font-size: 1.4rem;
   line-height: 1.5;
   margin: 0;
-  text-align: justify;
+ 
 }
 
 .aboutSocialMedia {

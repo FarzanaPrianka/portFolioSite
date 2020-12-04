@@ -1,10 +1,17 @@
-header {
-  height: 100vh;
-  background-image: url("assets/headerImage.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
+// header {
+// min-height: 100vh;
+// //   background-image: url("assets/headerImage.jpg");
+// //   background-size: cover;
+// //   background-attachment: fixed;
+// //   background-repeat: no-repeat;
+// //   background-position: center;
+// }
+
+.logo {
+  width: 15%;
+  margin: 0 auto;
+  // padding: 30px 0;
+  // border: 1px solid red;
 }
 
 .headerWrapper {
@@ -16,28 +23,45 @@ header {
   flex-direction: column;
 }
 
-#helloWorld {
+h1 {
+
   text-align: center;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-size: 10vmax;
+  
+//   line-height: 70px;
+ 
+//   padding: 0;
+//   color: $fifthColor;
+     font-size: 10vmax;
+     margin: 7vh auto 3.5vh;
 }
 
-.helloWorldContainer {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+h2 {
+
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2vmax;
+  color: #058286;
+//   color: $fifthColor;
+
+
+
 }
+// .helloWorldContainer {
+
+  
+// //   padding: 80px;
+// //   display: flex;
+// //   flex-direction: column;
+// //   justify-content: flex-end;
+
+// }
 
 .welcomeTextContainer {
   height: 30%;
 }
 
 #welcomeText {
-  color: white;
+
   margin: 0;
   padding: 0 30px;
   text-align: center;
@@ -45,7 +69,7 @@ header {
 }
 
 header p {
-  text-align: center;
+  
   font-size: 3.2vmax;
 }
 

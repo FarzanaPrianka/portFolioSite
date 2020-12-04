@@ -1,10 +1,11 @@
 .contact {
-  min-height: 95vh;
+  // min-height: 100vh;
   position: relative;
 }
 
 .contactContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 50px;
@@ -12,7 +13,8 @@
 
 //text and icon styling
 .contactText {
-  width: 40%;
+  
+  text-align: center;
 }
 
 .contactText h3 {
@@ -21,7 +23,15 @@
 
 .contactInfo {
   font-size: 1.8vmax;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+
+
+
 
 .fa-envelope,
 .fa-phone,
@@ -29,24 +39,23 @@
 .fab {
   margin-right: 17px;
   color: $primaryColor;
-  font-size: 1.8vmax;
+  font-size: 3vmax;
 }
 
-.backgroundText {
-  font-size: 13vmax;
-  color: rgba(239, 199, 194, 0.3);
-  position: absolute;
-  z-index: -10;
-  margin: 0;
-  bottom: 0;
-}
 
-.contactInfo i:hover,
-.socialMedia i:hover {
-  color: $sixthColor;
+
+// .contactInfo i:hover,
+// .socialMedia i:hover {
+//   color: $sixthColor;
+// }
+
+.socialMedia {
+  margin: 5vmax auto;
+
 }
 
 .socialMedia i {
+  
   transform: all 0.7s;
 }
 
@@ -56,20 +65,21 @@
 
 //form styling
 .formContainer {
-  width: 50%;
-  padding: 50px 0;
+  width: 80%;
+  // padding: 50px 0;
   background-color: $fourthColor;
   transition: all 0.5s;
+  margin-bottom: 5vmax;
 }
 
 form {
   width: 100%;
   margin: 0 auto;
   min-height: 400px;
-  padding: 35px;
-  border: 1.5px solid $thirdColor;
-  position: relative;
-  right: 50px;
+  padding: 60px;
+  // border: 1.5px solid $thirdColor;
+  // position: relative;
+  // right: 50px;
 }
 
 input[type="email"],
@@ -91,7 +101,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: $thirdColor;
+  color: black;
 }
 
 .submitForm {
@@ -111,13 +121,13 @@ textarea::placeholder {
 
 .submitForm:hover {
   background-color: $primaryColor;
-  color: $seventhColor;
+  color: white;
   border: none;
 }
 
-.formContainer:hover {
-  background-color: rgba(239, 199, 194, 0.2);
-}
+// .formContainer:hover {
+//   background-color: rgba(239, 199, 194, 0.2);
+// }
 
 .formContainer:hover .backgroundText {
   color: $fourthColor;

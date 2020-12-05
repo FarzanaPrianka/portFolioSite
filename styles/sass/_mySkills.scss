@@ -1,22 +1,25 @@
 .mySkillsSection .wrapper {
-  background: #02aab0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #02aab0,
-    #00cdac
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #02aab0, #00cdac);
+  // background: #02aab0; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to right,
+  //   #02aab0,
+  //   #00cdac
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #037074, #027764);
+  
   position: relative;
   bottom: -50px;
-  color: white;
-  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
+  color: $thirdColor;
+  // border:4px solid $thirdColor;
+  background-color: #f7f7f7;
+  // box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
 }
 
 .mySkillsSection h3 {
   text-align: center;
   font-size: 3vmax;
   margin: 0;
-  padding: 30px 0 50px;
+  padding: 9vh 0;
 }
 
 .mySkills {
@@ -37,7 +40,7 @@
 }
 
 .mySkills li i {
-  color: #e2fcff;
+  color: $thirdColor;
   font-size: 5vmax;
   transition: all 0.7s;
   margin: 0;
@@ -47,9 +50,7 @@
   transition: all 0.7s;
 }
 
-.mySkills li:hover .iconContainer {
-  transform: scale(1.5);
-}
+
 
 //responsive design starts------------------------
 

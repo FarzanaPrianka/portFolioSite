@@ -1,6 +1,7 @@
 .contact {
-  // min-height: 100vh;
+
   position: relative;
+
 }
 
 .contactContainer {
@@ -9,6 +10,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 50px;
+  
 }
 
 //text and icon styling
@@ -19,6 +21,7 @@
 
 .contactText h3 {
   font-size: 3vmax;
+  margin: 10vmax auto 8vmax;
 }
 
 .contactInfo {
@@ -39,15 +42,10 @@
 .fab {
   margin-right: 17px;
   color: $primaryColor;
-  font-size: 3vmax;
+  font-size: 4vmax;
 }
 
 
-
-// .contactInfo i:hover,
-// .socialMedia i:hover {
-//   color: $sixthColor;
-// }
 
 .socialMedia {
   margin: 5vmax auto;
@@ -65,7 +63,7 @@
 
 //form styling
 .formContainer {
-  width: 80%;
+  width: 70%;
   // padding: 50px 0;
   background-color: $fourthColor;
   transition: all 0.5s;
@@ -77,6 +75,7 @@ form {
   margin: 0 auto;
   min-height: 400px;
   padding: 60px;
+  
   // border: 1.5px solid $thirdColor;
   // position: relative;
   // right: 50px;
@@ -97,6 +96,7 @@ textarea {
   background: transparent;
   margin-bottom: 10px;
   color: $thirdColor;
+  text-align: center;
 }
 
 input::placeholder,
@@ -112,7 +112,7 @@ textarea::placeholder {
   border: none;
   padding: 15px 10px;
   font-size: 13px;
-  margin: 20px 0;
+  margin: 20px auto;
   font-weight: 700;
   width: 100px;
   border: 1px solid $thirdColor;
@@ -133,11 +133,11 @@ textarea::placeholder {
   color: $fourthColor;
 }
 
-@media (max-width: 1180px) {
-  .contactContainer {
-    padding: 40px;
-  }
-}
+// @media (max-width: 1180px) {
+//   .contactContainer {
+//     padding: 40px;
+//   }
+// }
 
 @media (max-width: 768px) {
   .contactContainer {
@@ -149,8 +149,8 @@ textarea::placeholder {
     text-align: center;
   }
 
-  .formContainer {
-    width: 100%;
+   .formContainer {
+    width: 90%;
   }
 
   .backgroundText {
@@ -160,7 +160,7 @@ textarea::placeholder {
   .contactInfo,
   .socialMedia i,
   .contactText i {
-    font-size: 3vmax;
+    font-size: 5vmax;
   }
 
   .contactText i {
@@ -171,10 +171,10 @@ textarea::placeholder {
     font-size: 4vmax;
   }
 
-  form {
-    width: 80%;
-    right: 0;
-  }
+  // form {
+  //   width: 80%;
+  //   right: 0;
+  // }
 
   input[type="email"],
   input[type="text"],

@@ -36,12 +36,12 @@
   text-align: center;
   width: 30%;
   padding: 20px 10px;
-  font-size: 2vmax;
+  font-size: 1.5vmax;
 }
 
 .mySkills li i {
   color: $thirdColor;
-  font-size: 5vmax;
+  font-size: 3vmax;
   transition: all 0.7s;
   margin: 0;
 }
@@ -59,7 +59,7 @@
     font-size: 4vmax;
   }
 
-  .mySkills li {
-    font-size: 3vmax;
-  }
+  // .mySkills li {
+  //   font-size: 3vmax;
+  // }
 }

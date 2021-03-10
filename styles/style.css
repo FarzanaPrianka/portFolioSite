@@ -296,7 +296,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1180px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -320,8 +320,8 @@ header {
 }
 
 .logo {
-  width: 25%;
-  margin: 2vmax auto 0;
+  width: 18%;
+  margin: 6vmax auto 2vmax;
 }
 
 .headerWrapper {
@@ -348,7 +348,7 @@ h1 {
 h2 {
   text-align: center;
   font-weight: lighter;
-  font-size: 2vmax;
+  font-size: 1.5vmax;
   color: #058286;
 }
 
@@ -639,12 +639,12 @@ nav {
   text-align: center;
   width: 30%;
   padding: 20px 10px;
-  font-size: 2vmax;
+  font-size: 1.5vmax;
 }
 
 .mySkills li i {
   color: #4b4d5d;
-  font-size: 5vmax;
+  font-size: 3vmax;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
   margin: 0;
@@ -659,9 +659,6 @@ nav {
   .mySkillsSection h3 {
     font-size: 4vmax;
   }
-  .mySkills li {
-    font-size: 3vmax;
-  }
 }
 
 #work {
@@ -673,6 +670,11 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -690,23 +692,24 @@ nav {
 }
 
 .project {
-  width: 49%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
+  margin-bottom: 50px;
 }
 
 .project:hover {
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
-  width: 50%;
 }
 
 .name {
   text-align: center;
   color: white;
-  font-size: 2.5vmax;
+  font-size: 2vmax;
+  font-weight: bold;
   margin: 6vmax auto 4vmax;
 }
 
@@ -726,6 +729,9 @@ nav {
   padding: 0 20px;
   margin: 2vmax auto;
   opacity: 0;
+  font-weight: light;
+  width: 40%;
+  line-height: 3vmax;
 }
 
 #psdConversion {
@@ -793,7 +799,7 @@ nav {
 }
 
 .overlayUx:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .overlayUx:hover .year {
@@ -903,7 +909,7 @@ nav {
 .fab {
   margin-right: 17px;
   color: #058286;
-  font-size: 4vmax;
+  font-size: 3vmax;
 }
 
 .socialMedia {
@@ -921,7 +927,7 @@ nav {
 }
 
 .formContainer {
-  width: 70%;
+  width: 40%;
   background-color: #eef4f1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1093,7 +1099,7 @@ textarea::placeholder {
 
 .footerNote {
   text-align: center;
-  font-size: 2vmax;
+  font-size: 1vmax;
   background-color: #f7f7f7;
   margin: 0;
   color: #4b4d5d;

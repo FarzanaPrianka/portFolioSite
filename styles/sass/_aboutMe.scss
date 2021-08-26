@@ -1,126 +1,174 @@
-// .logo {
-//   width: 25%;
-//   margin: 0 auto;
-//   padding: 30px 0;
-//   border: 1px solid red;
-// }
-
-// .aboutMeContainer {
-//   // height: 120vh;
-//   // display: flex;
-
-// }
-
-.aboutMeSection {
-  padding-bottom: 100px;
-}
-
-.aboutMeContainerRight {
-  width: 80%;
-  margin: 0 auto;
-  height: 100%;
-  // border: 5px solid red;
-  // background-color: $fourthColor;
+.aboutMeContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutMeImageContainer {
-  width: 300px;
-  position: relative;
-  right: 50px;
-  height: 78%;
-  margin: auto auto;
-  border: 5px solid black;
-  
-}
-
-.aboutMeTextContainer {
-  width: 50%;
-  height: 89%;
-  margin: auto auto;
-}
-
-.aboutMeTextContainer h3 {
-  font-size: 3vmax;
-}
-
-.aboutMeTextContainer p {
-  padding-right: 50px;
-  font-size: 1.4rem;
-  line-height: 1.5;
-  margin: 0;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 150px 0 100px;
  
 }
 
-.aboutSocialMedia {
-  margin-top: 20px;
+.aboutMeImage {
+  width: 40%;
 }
 
-.aboutSocialMedia i {
-  font-size: 3rem;
-  transition: all 0.5s;
-
+.aboutMeDescription {
+  width: 50%;
 }
 
-.aboutSocialMedia i:hover {
-  transform: scale(1.2);
-  color: $sixthColor;
+.aboutMeDescription p {
+  font-size: 21px;
+  line-height: 36px;
+  font-weight: lighter;
+}
+
+.aboutMeImageCaption {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: lighter;
+}
+
+.aboutMeContainer h4{
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-top: 0;
+  
+}
+
+.fab, .fas {
+  color: $thirdColor;
+  margin: 0 5px;
+  font-size: 1.5rem;
+}
+
+.fa-twitter-square {
+  margin-left: 0;
+}
+
+.email {
+  color: $primaryColor;
+}
+
+.fab:hover {
+  color: $primaryColor;
+}
+
+
+
+
+
+
+
+// .hola {
+//   color:rebeccapurple;
+// }
+
+// .aboutMeSection {
+//   padding-bottom: 100px;
+// }
+
+// .aboutMeContainerRight {
+//   width: 80%;
+//   margin: 0 auto;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .aboutMeImageContainer {
+//   width: 300px;
+//   position: relative;
+//   right: 50px;
+//   height: 78%;
+//   margin: auto auto;
+//   border: 5px solid black;
+  
+// }
+
+// .aboutMeTextContainer {
+//   width: 50%;
+//   height: 89%;
+//   margin: auto auto;
+// }
+
+// .aboutMeTextContainer h3 {
+//   font-size: 3vmax;
+// }
+
+// .aboutMeTextContainer p {
+//   padding-right: 50px;
+//   font-size: 1.4rem;
+//   line-height: 1.5;
+//   margin: 0;
+ 
+// }
+
+// .aboutSocialMedia {
+//   margin-top: 20px;
+// }
+
+// .aboutSocialMedia i {
+//   font-size: 3rem;
+//   transition: all 0.5s;
+
+// }
+
+// .aboutSocialMedia i:hover {
+//   transform: scale(1.2);
+//   color: $sixthColor;
 
   
 
-}
+// }
 
-@media (max-width: 980px) {
-  .aboutMeContainerRight {
-    flex-direction: column;
-    padding-bottom: 40px;
-  }
+// @media (max-width: 980px) {
+//   .aboutMeContainerRight {
+//     flex-direction: column;
+//     padding-bottom: 40px;
+//   }
 
-  .aboutMeContainer {
-    height: auto;
-  }
+//   .aboutMeContainer {
+//     height: auto;
+//   }
 
-  .aboutMeImageContainer,
-  .aboutMeTextContainer {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    height: auto;
-  }
+//   .aboutMeImageContainer,
+//   .aboutMeTextContainer {
+//     width: 80%;
+//     margin: 0 auto;
+//     text-align: center;
+//     height: auto;
+//   }
 
-  .aboutMeImageContainer {
-    right: 0;
-    margin-top: 10vh;
-  }
+//   .aboutMeImageContainer {
+//     right: 0;
+//     margin-top: 10vh;
+//   }
 
-  .aboutMeTextContainer p {
-    padding: 0;
-  }
+//   .aboutMeTextContainer p {
+//     padding: 0;
+//   }
 
-  .aboutSocialMedia i {
-  font-size: 2.5rem;
-  }
-}
+//   .aboutSocialMedia i {
+//   font-size: 2.5rem;
+//   }
+// }
 
-@media (max-width: 768px) {
-  .aboutMeTextContainer p {
-    font-size: 1.2rem;
-  }
+// @media (max-width: 768px) {
+//   .aboutMeTextContainer p {
+//     font-size: 1.2rem;
+//   }
 
-  .aboutMeTextContainer h3 {
-    font-size: 4vmax;
-  }
-}
+//   .aboutMeTextContainer h3 {
+//     font-size: 4vmax;
+//   }
+// }
 
-@media (max-width: 550px) {
-  .aboutMeTextContainer p {
-    font-size: 1rem;
+// @media (max-width: 550px) {
+//   .aboutMeTextContainer p {
+//     font-size: 1rem;
     
-  }
+//   }
 
-  .aboutSocialMedia i {
-  font-size: 2rem;
-  }
-}
+//   .aboutSocialMedia i {
+//   font-size: 2rem;
+//   }
+// }

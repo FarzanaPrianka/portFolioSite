@@ -27,8 +27,6 @@ nav {
   color: white;
 }
 
-
-
 .navList {
   list-style: none;
   margin: 0;
@@ -36,7 +34,7 @@ nav {
   display: flex;
   justify-content: center;
   margin: 15px auto;
-  font-size: 1.3rem;
+  font-size: 1rem;
   transition: all 1s;
 
 }
@@ -45,7 +43,6 @@ nav {
   padding: 10px 25px;
   text-align: center;
   display: flex;
-  
   justify-content: center;
 }
 
@@ -54,31 +51,22 @@ nav {
   margin-top: 80px;
 }
 
-.diamond {
-  margin-top: 20px;
-  color: $seventhColor;
-  opacity: 0;
-}
-
-.navList li:hover {
-  color: $primaryColor;
-}
-
-.navList li:hover .diamond {
-  opacity: 1;
-}
-
 .navList li a {
   text-decoration: none;
   color: $thirdColor;
 }
 
-.navList li a:visited {
-  color: $thirdColor;
-}
-
 .navList li a:hover {
   color: $primaryColor;
+}
+
+.navList li a:link {
+
+ color: $primaryColor;
+}
+
+a.focus:link, a.focus:visited
+{color: $primaryColor
 }
 
 .cancel {

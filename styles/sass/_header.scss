@@ -1,5 +1,5 @@
 header {
-min-height: 85vh;
+min-height: 80vh;
 // //   background-image: url("assets/headerImage.jpg");
 // //   background-size: cover;
 // //   background-attachment: fixed;
@@ -31,7 +31,7 @@ h1 {
  
 //   padding: 0;
 //   color: $fifthColor;
-     font-size: 10vmax;
+     font-size: 9vmax;
      margin: 3.5vh auto 3.5vh;
 }
 
@@ -73,15 +73,9 @@ header p {
   font-size: 3.2vmax;
 }
 
-.fa-arrow-circle-down {
-  color: #0cebeb;
-}
 
-.fa-arrow-circle-down:hover {
-  color: #29ffc6;
 
-  transition: all 0.7s;
-}
+
 
 @media (max-width: 768px) {
 

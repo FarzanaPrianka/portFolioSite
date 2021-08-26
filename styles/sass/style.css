@@ -525,7 +525,7 @@ a.focus:link, a.focus:visited {
 }
 
 .email {
-  color: #058286;
+  color: red;
 }
 
 .fab:hover {
@@ -1008,3 +1008,4 @@ textarea::placeholder {
   color: #4b4d5d;
   padding: 20px 0;
 }
+/*# sourceMappingURL=style.css.map */

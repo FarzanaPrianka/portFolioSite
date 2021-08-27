@@ -60,13 +60,14 @@ nav {
   color: $primaryColor;
 }
 
-.navList li a:link {
+// .navList li a:link, .navList li a:visited {
 
- color: $primaryColor;
-}
+//  color: $primaryColor;
+// }
 
 a.focus:link, a.focus:visited
-{color: $primaryColor
+{
+  color: $primaryColor
 }
 
 .cancel {

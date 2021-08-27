@@ -453,10 +453,6 @@ nav {
   color: #058286;
 }
 
-.navList li a:link {
-  color: #058286;
-}
-
 a.focus:link, a.focus:visited {
   color: #058286;
 }

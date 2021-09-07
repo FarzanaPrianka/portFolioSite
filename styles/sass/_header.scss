@@ -1,4 +1,4 @@
-header {
+header.homePage {
 min-height: 80vh;
 // //   background-image: url("assets/headerImage.jpg");
 // //   background-size: cover;
@@ -68,10 +68,31 @@ h2 {
   font-size: 2rem;
 }
 
-header p {
+header.homePage p {
   
   font-size: 3.2vmax;
 }
+
+
+
+// header .wrapper {
+//     padding: 80px;
+//     background-color: rgba(0,0,0, 0.5);
+// }
+
+// h1 {
+//     margin:0;
+//     padding: 0;
+//     font-size: 60px;
+    
+// }
+
+// uniqlo header
+
+
+
+
+//metro header
 
 
 
@@ -79,7 +100,7 @@ header p {
 
 @media (max-width: 768px) {
 
-  header {
+  header.homePage {
     min-height: 60vh;
 
 }

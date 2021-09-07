@@ -315,7 +315,7 @@ h3 {
   text-transform: uppercase;
 }
 
-header {
+header.homePage {
   min-height: 80vh;
 }
 
@@ -363,12 +363,12 @@ h2 {
   font-size: 2rem;
 }
 
-header p {
+header.homePage p {
   font-size: 3.2vmax;
 }
 
 @media (max-width: 768px) {
-  header {
+  header.homePage {
     min-height: 60vh;
   }
   h2 {
@@ -471,6 +471,96 @@ a.focus:link, a.focus:visited {
   .navList {
     font-size: 0.7rem;
   }
+}
+
+.hilshaHeader {
+  background-image: url("assets/hilshaCoverPhoto.jpg");
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin: 100px auto 0;
+}
+
+.hilshaProjectTitle {
+  color: white;
+  font-size: 63px;
+}
+
+.hilshaProjectSubtitle {
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 160%;
+  font-size: 21px;
+  font-weight: lighter;
+}
+
+.hilshaSections {
+  width: 90%;
+  margin: 100px auto;
+}
+
+#hilshaWrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#hilshaSectionTitle {
+  font-size: 36px;
+}
+
+.hilshaSectionText {
+  font-size: 18px;
+  line-height: 180%;
+}
+
+#hilshaBackgroundsPartTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px auto 60px;
+}
+
+#hilshaBackgroundsPartTwo div {
+  margin-bottom: 50px;
+  width: 40%;
+}
+
+.hilshaSubsectionTitle {
+  font-size: 18px;
+}
+
+#hilshaBackgroundsPartTwo div p {
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.seePrototypeHilsha {
+  background-color: #DB4F34;
+  color: white;
+  width: 210px;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 5px;
 }
 
 .aboutMeContainer {
@@ -754,31 +844,6 @@ a.focus:link, a.focus:visited {
   .stack {
     font-size: 2.5vmax;
   }
-}
-
-#scribbles {
-  padding: 80px 0;
-  background-color: #f7f7f7;
-}
-
-.titleScribbles {
-  text-align: center;
-  font-size: 3vmax;
-  margin-bottom: 40px;
-}
-
-.scribbles {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.scribbleText {
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-.here {
-  text-decoration: underline;
 }
 
 .contact {

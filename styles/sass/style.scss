@@ -3,11 +3,16 @@
 @import "commonDesign";
 @import "header";
 @import "navigationBar";
+
+//hilsha app
+@import "headerRestaurantApp";
+@import "hilshaSections";
+
 @import "aboutMe";
 @import "mySkills";
 @import "uXCaseStudies.scss";
 @import "recentWorks.scss";
-@import "scribble.scss";
+
 
 @import "contact";
 @import "footer.scss";

@@ -514,13 +514,20 @@ a.focus:link, a.focus:visited {
   margin: 100px auto;
 }
 
-#hilshaWrapper {
-  max-width: 700px;
+.margin {
+  border: 0.5px solid rgba(220, 220, 220, 0.9);
+  max-width: 900px;
+  margin: auto;
+}
+
+.hilshaWrapper {
+  max-width: 900px;
   margin: 0 auto;
 }
 
-#hilshaSectionTitle {
+.hilshaSectionTitle {
   font-size: 36px;
+  margin-top: 0;
 }
 
 .hilshaSectionText {
@@ -561,6 +568,15 @@ a.focus:link, a.focus:visited {
   border: none;
   padding: 20px 20px;
   border-radius: 5px;
+}
+
+.designThinkingProcessImage {
+  margin-top: 100px;
+}
+
+.personaImage {
+  border: 1px solid gainsboro;
+  margin-top: 100px;
 }
 
 .aboutMeContainer {

@@ -5,8 +5,16 @@
 @import "navigationBar";
 
 //hilsha app
-@import "headerRestaurantApp";
+@import "hilshaHeader";
 @import "hilshaSections";
+
+//metro
+@import "metroHeader";
+@import "metroSections";
+
+//uniqlo
+@import "uniqloHeader";
+
 
 @import "aboutMe";
 @import "mySkills";

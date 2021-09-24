@@ -339,16 +339,16 @@ header.homePage {
   flex-direction: column;
 }
 
-h1 {
+.hello {
   text-align: center;
-  font-size: 9vmax;
+  font-size: 105px;
   margin: 3.5vh auto 3.5vh;
 }
 
-h2 {
+.introLine {
   text-align: center;
   font-weight: lighter;
-  font-size: 1.5vmax;
+  font-size: 21px;
   color: #058286;
 }
 
@@ -509,6 +509,11 @@ a.focus:link, a.focus:visited {
   font-weight: lighter;
 }
 
+.hilshaWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .hilshaSections {
   width: 90%;
   margin: 100px auto;
@@ -518,11 +523,6 @@ a.focus:link, a.focus:visited {
   border: 0.5px solid rgba(220, 220, 220, 0.9);
   max-width: 900px;
   margin: auto;
-}
-
-.hilshaWrapper {
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .hilshaSectionTitle {
@@ -561,6 +561,15 @@ a.focus:link, a.focus:visited {
   line-height: 170%;
 }
 
+.hilshaSubsectionTitle {
+  font-size: 18px;
+}
+
+#hilshaBackgroundsPartTwo div p {
+  font-size: 16px;
+  line-height: 170%;
+}
+
 .seePrototypeHilsha {
   background-color: #DB4F34;
   color: white;
@@ -570,13 +579,239 @@ a.focus:link, a.focus:visited {
   border-radius: 5px;
 }
 
-.designThinkingProcessImage {
+.hilshaDesignThinkingProcessImage {
   margin-top: 100px;
 }
 
-.personaImage {
+.hilshaPersonaImage, .hilshaEmpathyMapImage, .hilshaJourneyMapImage, .hilshaValuePropositionImage {
   border: 1px solid gainsboro;
   margin-top: 100px;
+}
+
+.hilshaValuePropositionImage {
+  margin-top: 50px;
+}
+
+.hilshaFinalPrototypeImage {
+  width: 30%;
+  margin: 30px auto;
+}
+
+.hilshaWireframeImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hilshaWireframeImage {
+  width: 49%;
+  margin-bottom: 60px;
+}
+
+.hilshaLoFidelityPrototypeImage {
+  margin-top: 20px;
+  -webkit-transform: all 0.7s;
+          transform: all 0.7s;
+  position: relative;
+}
+
+.overlayUxHilsha {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  opacity: 0;
+}
+
+.hilshaLoFidelityPrototypeImage:hover .overlayUxHilsha {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  color: white;
+}
+
+.hilshaEmphasis {
+  font-style: italic;
+}
+
+.hilshaList li {
+  line-height: 180%;
+  margin-bottom: 20px;
+}
+
+.hilshaList {
+  list-style: none;
+}
+
+.hilshaDefine {
+  line-height: 180%;
+  padding-left: 40px;
+}
+
+.metroHeader {
+  background-image: url("assets/metroRedesign.jpg");
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin: 100px auto 0;
+  position: relative;
+}
+
+.metroProjectTitle {
+  color: white;
+  font-size: 42px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.metroWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.metroSections {
+  width: 90%;
+  margin: 100px auto;
+}
+
+.margin {
+  border: 0.5px solid rgba(220, 220, 220, 0.9);
+  max-width: 900px;
+  margin: auto;
+}
+
+.metroSectionTitle {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.metroSectionText {
+  font-size: 18px;
+  line-height: 180%;
+}
+
+#metroBackgroundsPartTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px auto 60px;
+}
+
+#metroBackgroundsPartTwo div {
+  margin-bottom: 50px;
+  width: 40%;
+}
+
+.metroSubsectionTitle {
+  font-size: 18px;
+}
+
+#metroBackgroundsPartTwo div p {
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.seePrototypeMetro {
+  background-color: #DB4F34;
+  color: white;
+  width: 210px;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+.uniqloHeader {
+  background-image: url("assets/uniqlo.jpg");
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin: 100px auto 0;
+  position: relative;
+}
+
+.uniqloProjectTitle {
+  color: white;
+  font-size: 42px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .aboutMeContainer {
@@ -715,12 +950,13 @@ a.focus:link, a.focus:visited {
 
 .titleuXCaseStudies {
   text-align: center;
-  font-size: 3vmax;
+  font-size: 42px;
   margin-bottom: 9vmax;
 }
 
 .project {
   width: 100%;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: all 0.7s;
@@ -736,9 +972,9 @@ a.focus:link, a.focus:visited {
 .name {
   text-align: center;
   color: white;
-  font-size: 2vmax;
+  font-size: 21px;
   font-weight: bold;
-  margin: 6vmax auto 4vmax;
+  margin: 6vmax auto 0;
 }
 
 .uxDetails {
@@ -753,13 +989,13 @@ a.focus:link, a.focus:visited {
   transition: all 0.7s;
   text-align: center;
   color: white;
-  font-size: 1.5vmax;
+  font-size: 16px;
   padding: 0 20px;
   margin: 2vmax auto;
   opacity: 0;
   font-weight: light;
-  width: 40%;
-  line-height: 3vmax;
+  width: 55%;
+  line-height: 150%;
 }
 
 #psdConversion {

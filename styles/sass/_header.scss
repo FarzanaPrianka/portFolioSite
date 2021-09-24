@@ -23,27 +23,19 @@ min-height: 80vh;
   flex-direction: column;
 }
 
-h1 {
+.hello {
 
   text-align: center;
-  
-//   line-height: 70px;
- 
-//   padding: 0;
-//   color: $fifthColor;
-     font-size: 9vmax;
+     font-size: 105px;
      margin: 3.5vh auto 3.5vh;
 }
 
-h2 {
+.introLine {
 
   text-align: center;
   font-weight: lighter;
-  font-size: 1.5vmax;
+  font-size: 21px;
   color: #058286;
-//   color: $fifthColor;
-
-
 
 }
 // .helloWorldContainer {

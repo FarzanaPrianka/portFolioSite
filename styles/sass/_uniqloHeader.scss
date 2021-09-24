@@ -1,0 +1,33 @@
+.uniqloHeader {
+    background-image: url("assets/uniqlo.jpg");
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin: 100px auto 0;
+    position: relative;
+   
+}
+
+
+.uniqloProjectTitle {
+    color: white;
+    font-size: 42px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+   
+}

@@ -1,0 +1,82 @@
+//section wrapper
+
+.metroWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+//section style
+
+.metroSections {
+    width: 90%;
+    margin: 100px auto;
+}
+
+//section margin
+
+.margin {
+     border: 0.5px solid rgba(220, 220, 220, 0.9);
+     max-width: 900px;
+     margin: auto;
+
+}
+
+//section title-all h3
+
+.metroSectionTitle {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+//section text - usually p
+
+.metroSectionText {
+
+    font-size: 18px;
+    line-height: 180%;
+    
+}
+
+// role, duration, tool, type------------------------------------------
+
+#metroBackgroundsPartTwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px auto 60px;
+
+}
+
+#metroBackgroundsPartTwo div {
+    // border: 1px solid red;
+    margin-bottom: 50px;
+    width: 40%;
+    
+}
+
+// sub section title - all h4
+
+.metroSubsectionTitle {
+    font-size: 18px;
+    
+}
+
+#metroBackgroundsPartTwo div p {
+
+    font-size: 16px;
+    line-height: 170%;
+  
+}
+
+// see protytpe button---------------------------------------------------------
+
+.seePrototypeMetro {
+
+    background-color: #DB4F34;
+    color: white;
+    width: 210px;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+
+}

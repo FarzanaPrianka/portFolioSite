@@ -1,12 +1,15 @@
+//section wrapper
+
+.hilshaWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 //hilsha section style
 
 .hilshaSections {
     width: 90%;
     margin: 100px auto;
-   
-    
-    
-   
 }
 
 .margin {
@@ -16,14 +19,6 @@
 
 }
 
-//section wrapper
-
-.hilshaWrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    // border-bottom: 1px solid gray;
-    // padding-bottom: 100px;
-}
 
 //section title-all h3
 
@@ -40,18 +35,6 @@
     line-height: 180%;
     
 }
-
-
-
-
-
-// .hilshaSections p{
-
-//     font-size: 18px;
-//     line-height: 2;
-// }
-
-
 
 
 // role, duration, tool, type------------------------------------------
@@ -82,10 +65,24 @@
 
     font-size: 16px;
     line-height: 170%;
+  
+}
+
+// sub section title - all h4
+
+.hilshaSubsectionTitle {
+    font-size: 18px;
     
 }
 
-// see protytpe button ---------------------------------------------------------------
+#hilshaBackgroundsPartTwo div p {
+
+    font-size: 16px;
+    line-height: 170%;
+  
+}
+
+// see protytpe button---------------------------------------------------------
 
 .seePrototypeHilsha {
 
@@ -95,16 +92,98 @@
     border: none;
     padding: 20px 20px;
     border-radius: 5px;
-    
 
 }
 
 
-.designThinkingProcessImage {
+.hilshaDesignThinkingProcessImage {
     margin-top: 100px;
 }
 
-.personaImage {
+//image styling
+
+.hilshaPersonaImage, .hilshaEmpathyMapImage, .hilshaJourneyMapImage, .hilshaValuePropositionImage {
     border: 1px solid rgb(220, 220, 220);
     margin-top: 100px;
+}
+
+.hilshaValuePropositionImage {
+    margin-top: 50px;
+
+}
+
+.hilshaFinalPrototypeImage {
+    width: 30%;
+    margin: 30px auto;
+}
+
+
+
+.hilshaWireframeImageContainer {
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+.hilshaWireframeImage {
+   
+    width: 49%;
+    margin-bottom: 60px;
+
+}
+
+.hilshaLoFidelityPrototypeImage {
+    margin-top: 20px;
+    transform: all 0.7s;
+    position: relative;
+    
+}
+
+.overlayUxHilsha {
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  transition: all 0.7s;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+   opacity: 0;
+}
+
+
+.hilshaLoFidelityPrototypeImage:hover .overlayUxHilsha {
+
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    color: white;
+
+}
+
+
+
+.hilshaEmphasis {
+    font-style: italic;
+}
+
+.hilshaList li {
+    line-height: 180%;
+    margin-bottom: 20px;
+
+}
+
+.hilshaList{
+    list-style: none;
+}
+
+.hilshaDefine {
+    // font-style: italic;
+    line-height: 180%;
+    // font-weight: light;
+    padding-left: 40px;
+    
 }

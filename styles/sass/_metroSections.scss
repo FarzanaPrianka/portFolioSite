@@ -80,3 +80,109 @@
     border-radius: 5px;
 
 }
+
+// common---------------
+
+.metroList {
+    list-style: none;
+    
+}
+
+.metroDesignGoals, .metroProblems {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.metroProblems {
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.metroProblems li {
+    // border: 1px solid grey;
+    width: 45%;
+    margin-bottom: 50px;
+    text-align: left;
+    
+
+}
+
+.problemTextMetro {
+    font-weight: lighter;
+    font-size: 16px;
+    width: 80%;
+    padding: 1.5em;
+    background-color: rgba(220, 220, 220, 0.5);
+    min-height: 180px;
+    border-radius: 10px;
+    
+   
+}
+
+.metroProblemsQuestions {
+    margin-bottom: 50px;
+    list-style: none;
+
+}
+
+.metroProblemsQuestions::before {
+    content: '\2022';
+    padding-right: 1em;
+    color: red;
+    
+}
+
+.metroProblemsTitle {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.metroProblemContainer {
+    border: 1px solid rgba(220, 220, 220, 0.5);
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+// .metroProblemsTitle {
+//     border-bottom: 1px solid rgba(220, 220, 220, 0.9);
+// }
+
+.metroDesignGoals li {
+    padding-left: 0;
+}
+
+.metroEmphasis {
+    font-weight: bold;
+}
+
+.spreadsheetMetro {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.affinityMapMetro {
+    margin-top: 50px;
+}
+
+.captionMetro {
+    font-size: 14px;
+    text-align: center;
+    color: grey;
+}
+
+.insightsMetro {
+    margin-top: 100px;
+    
+}
+
+.insightsMetroImage {
+    border: 1px solid rgba(220, 220, 220, 0.9);
+
+}

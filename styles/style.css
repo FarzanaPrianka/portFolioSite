@@ -771,6 +771,97 @@ a.focus:link, a.focus:visited {
   border-radius: 5px;
 }
 
+.metroList {
+  list-style: none;
+}
+
+.metroDesignGoals, .metroProblems {
+  list-style: none;
+  padding-left: 0;
+}
+
+.metroProblems {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.metroProblems li {
+  width: 45%;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.problemTextMetro {
+  font-weight: lighter;
+  font-size: 16px;
+  width: 80%;
+  padding: 1.5em;
+  background-color: rgba(220, 220, 220, 0.5);
+  min-height: 180px;
+  border-radius: 10px;
+}
+
+.metroProblemsQuestions {
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.metroProblemsQuestions::before {
+  content: '\2022';
+  padding-right: 1em;
+  color: red;
+}
+
+.metroProblemsTitle {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.metroProblemContainer {
+  border: 1px solid rgba(220, 220, 220, 0.5);
+  padding-left: 50px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.metroDesignGoals li {
+  padding-left: 0;
+}
+
+.metroEmphasis {
+  font-weight: bold;
+}
+
+.spreadsheetMetro {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.affinityMapMetro {
+  margin-top: 50px;
+}
+
+.captionMetro {
+  font-size: 14px;
+  text-align: center;
+  color: grey;
+}
+
+.insightsMetro {
+  margin-top: 100px;
+}
+
+.insightsMetroImage {
+  border: 1px solid rgba(220, 220, 220, 0.9);
+}
+
 .uniqloHeader {
   background-image: url("assets/uniqlo.jpg");
   min-height: 70vh;
@@ -956,7 +1047,7 @@ a.focus:link, a.focus:visited {
 
 .project {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: all 0.7s;
@@ -972,7 +1063,7 @@ a.focus:link, a.focus:visited {
 .name {
   text-align: center;
   color: white;
-  font-size: 21px;
+  font-size: 36px;
   font-weight: bold;
   margin: 6vmax auto 0;
 }
@@ -989,13 +1080,13 @@ a.focus:link, a.focus:visited {
   transition: all 0.7s;
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   padding: 0 20px;
   margin: 2vmax auto;
   opacity: 0;
   font-weight: light;
   width: 55%;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 #psdConversion {

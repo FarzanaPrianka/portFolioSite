@@ -26,7 +26,7 @@
 
 .project {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.7s;
@@ -38,13 +38,13 @@
 .project:hover {
   box-shadow: 5px 10px 18px #888888;
   
-  
 }
+
 
 .name {
   text-align: center;
   color: white;
-  font-size: 21px;
+  font-size: 36px;
   font-weight: bold;
   margin: 6vmax auto 0;
 }
@@ -61,13 +61,13 @@
   transition:all 0.7s;
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   padding: 0 20px;
   margin: 2vmax auto;
   opacity: 0;
   font-weight: light;
   width:55%;
-  line-height: 150%;
+  line-height: 160%;
 
 }
 

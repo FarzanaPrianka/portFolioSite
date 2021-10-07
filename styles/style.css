@@ -315,6 +315,12 @@ h3 {
   text-transform: uppercase;
 }
 
+.resume {
+  width: 80%;
+  border: 1px solid rgba(220, 220, 220, 0.5);
+  margin: 150px auto 100px;
+}
+
 header.homePage {
   min-height: 80vh;
 }
@@ -763,7 +769,7 @@ a.focus:link, a.focus:visited {
 }
 
 .seePrototypeMetro {
-  background-color: #DB4F34;
+  background-color: #eb3421;
   color: white;
   width: 210px;
   border: none;
@@ -819,16 +825,36 @@ a.focus:link, a.focus:visited {
   color: red;
 }
 
-.metroProblemsTitle {
+.metroProblemsTitle, .metroDesignDecisionTitle {
   text-align: left;
   margin-bottom: 50px;
 }
 
-.metroProblemContainer {
+.metroProblemContainer, .metroDesignDecisionContainer {
   border: 1px solid rgba(220, 220, 220, 0.5);
   padding-left: 50px;
   padding-top: 50px;
+  padding-right: 50px;
   margin-bottom: 50px;
+}
+
+.finalPrototypeMetro {
+  width: 40%;
+  margin: 100px auto;
+}
+
+.improvementMetro {
+  margin-top: 50px;
+}
+
+.screenMetro {
+  width: 35%;
+  margin: 0 auto 50px;
+}
+
+.metroProductDetailsContainer {
+  width: 60%;
+  margin: 50px auto;
 }
 
 .metroDesignGoals li {
@@ -860,6 +886,15 @@ a.focus:link, a.focus:visited {
 
 .insightsMetroImage {
   border: 1px solid rgba(220, 220, 220, 0.9);
+}
+
+.seePrototypeMetro {
+  background-color: EB3421;
+  color: white;
+  width: 210px;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 5px;
 }
 
 .uniqloHeader {
@@ -1017,7 +1052,11 @@ a.focus:link, a.focus:visited {
 
 #work {
   background-color: #f7f7f7;
-  padding: 80px 0;
+  padding: 80px 0 5px;
+}
+
+.psdConversion {
+  padding: 80px 0 30px;
 }
 
 .projectsContainer {

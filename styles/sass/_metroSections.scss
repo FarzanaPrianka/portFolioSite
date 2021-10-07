@@ -72,7 +72,7 @@
 
 .seePrototypeMetro {
 
-    background-color: #DB4F34;
+    background-color: rgb(235, 52, 33);
     color: white;
     width: 210px;
     border: none;
@@ -118,7 +118,6 @@
     background-color: rgba(220, 220, 220, 0.5);
     min-height: 180px;
     border-radius: 10px;
-    
    
 }
 
@@ -135,19 +134,43 @@
     
 }
 
-.metroProblemsTitle {
+.metroProblemsTitle, .metroDesignDecisionTitle {
     text-align: left;
     margin-bottom: 50px;
 }
 
-.metroProblemContainer {
+.metroProblemContainer, .metroDesignDecisionContainer {
     border: 1px solid rgba(220, 220, 220, 0.5);
     padding-left: 50px;
     padding-top: 50px;
+    padding-right: 50px;
     margin-bottom: 50px;
 }
 
+.finalPrototypeMetro {
+    width: 40%;
+    margin: 100px auto;
+}
 
+.improvementMetro {
+    margin-top: 50px;
+}
+
+
+
+
+.screenMetro {
+    
+    width: 35%;
+    margin: 0 auto 50px;
+
+}
+
+.metroProductDetailsContainer {
+   
+    width:60%;
+    margin: 50px auto;
+}
 
 
 // .metroProblemsTitle {
@@ -186,3 +209,15 @@
     border: 1px solid rgba(220, 220, 220, 0.9);
 
 }
+
+
+.seePrototypeMetro {
+
+    background-color: EB3421;
+    color: white;
+    width: 210px;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+

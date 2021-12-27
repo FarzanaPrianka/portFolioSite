@@ -1,0 +1,117 @@
+.landmarkHeader {
+    background-image: url("assets/landmark.jpg");
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin: 100px auto 0;
+   
+}
+
+
+.landmarkProjectTitle {
+    color: white;
+    font-size: 42px;
+   
+}
+
+//section wrapper
+
+.landmarkWrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+//hilsha section style
+
+.landmarkSections {
+    width: 90%;
+    margin: 100px auto;
+}
+
+
+//section title-all h3
+
+.landmarkSectionTitle {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+//section text - usually p
+
+.landmarkSectionText {
+
+    font-size: 18px;
+    line-height: 180%;
+    
+}
+
+.landmarkPainpoints {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 180%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.landmarkResearch {
+    font-weight: bold;
+    
+}
+
+.seePrototypeLandmark {
+
+    background-color: rgb(250, 172, 33);
+    color: #282828;
+    width: 210px;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    
+
+}
+
+.landmarkResearchProcess {
+    border: 1px solid rgb(220, 220, 220);
+    margin-top: 100px;
+}
+
+.painpointLandmark {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.landmarkUserFlow {
+    margin-top: 50px;
+}
+
+.landmarkinformationArchitecture {
+    margin-top: 50px;
+}
+
+.landmarkPersona {
+    margin-top: 50px;
+}
+
+.wireframeLandmark, .mockupLandmark {
+    margin-top: 60px;
+}
+
+// .contextualInquiryLandmark {
+//     width: 70%;
+//     margin: auto 0;
+// }
+
+.contextualScreenshot {
+  
+    margin: 20px auto 0;
+    
+    text-align: center;
+}

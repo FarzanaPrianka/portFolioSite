@@ -53,6 +53,8 @@
   font-size: 36px;
   font-weight: bold;
   margin: 6vmax auto 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .uxDetails {
@@ -119,11 +121,6 @@
 .overlayPsd {
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.9);
-//   background: -webkit-linear-gradient(to left,#000000,#2f3537);
-// background: linear-gradient(to left,#000000,#2f3537); 
-
-
-
   position: absolute;
   top: 0;
   bottom: 0;
@@ -171,6 +168,21 @@
   box-shadow: 5px 10px 18px #888888;
   width: 90%;
   
+}
+
+.name {
+  
+  font-size: 24px;
+
+}
+
+.year {
+  font-size: 14px;
+}
+
+.titleuXCaseStudies {
+ 
+  font-size: 32px;
 }
 
 .stack {
